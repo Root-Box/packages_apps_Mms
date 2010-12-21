@@ -126,6 +126,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String TEXT_AREA_SIZE            = "text_area_size";
     private static final int TEXT_AREA_LIMIT_MIN         = 2;
     private static final int TEXT_AREA_LIMIT_MAX         = 15;
+    public static final String USER_AGENT               = "pref_key_mms_user_agent";
+    public static final String USER_AGENT_CUSTOM        = "pref_key_mms_user_agent_custom";
 
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS       = 1;
