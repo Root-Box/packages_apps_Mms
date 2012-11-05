@@ -239,5 +239,9 @@
             android:summary="@string/pref_summary_input_type"
             android:entries="@array/pref_entries_input_type"
             android:entryValues="@array/pref_values_input_type" />
-    </PreferenceCategory>
+        <CheckBoxPreference
+            android:key="direct_call_pref"
+            android:title="@string/direct_call_title"
+            android:summary="@string/direct_call_summary"/>
+  </PreferenceCategory>
 </PreferenceScreen>

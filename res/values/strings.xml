@@ -910,4 +910,7 @@
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Quick reply</string>
 
+    <string name="direct_call_title">Direct Call</string>
+    <string name="direct_call_summary">Picking up the phone calls the current contact</string>
+
 </resources>
