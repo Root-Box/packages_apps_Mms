@@ -1019,4 +1019,7 @@
     <string name="pref_keyboard_send">Enter to Send</string>
     <string name="pref_keyboard_new_line">Enter for a new line</string>
 
+    <string name="direct_call_title">Direct Call</string>
+    <string name="direct_call_summary">Picking up the phone calls the current contact</string>
+
 </resources>

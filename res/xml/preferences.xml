@@ -205,9 +205,14 @@
 			android:entryValues="@array/pref_values_input_type" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_extra_settings">
-    <CheckBoxPreference android:key="pref_key_strip_unicode"
+    <CheckBoxPreference 
+        android:key="pref_key_strip_unicode"
         android:title="@string/pref_title_strip_unicode"
         android:summary="@string/pref_summary_strip_unicode"
         android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="direct_call_pref"
+        android:title="@string/direct_call_title"
+        android:summary="@string/direct_call_summary"/>
     </PreferenceCategory>
 </PreferenceScreen>

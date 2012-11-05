@@ -88,6 +88,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String INPUT_TYPE    = "pref_key_mms_input_type";
     public static final String STRIP_UNICODE            = "pref_key_strip_unicode";
 
+    private static final String DIRECT_CALL_PREF = "direct_call_pref";
+
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
@@ -115,6 +117,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mQrSmsReply;
     private CheckBoxPreference mQrDelete;
     private CheckBoxPreference mQrMarkRead;
+
+    private CheckBoxPreference mDirectCall;
 
     @Override
     protected void onCreate(Bundle icicle) {
@@ -149,6 +153,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mMmsReadReportPref = findPreference("pref_key_mms_read_reports");
         mMmsLimitPref = findPreference("pref_key_mms_delete_limit");
         mClearHistoryPref = findPreference("pref_key_mms_clear_history");
+    mDirectCall = (CheckBoxPreference) findPreference("direct_call_pref");
         mEnableNotificationsPref = (CheckBoxPreference) findPreference(NOTIFICATION_ENABLED);
         mQuickReplyCat = (PreferenceCategory) findPreference("category_quick_reply");
         mQrCallBack = (CheckBoxPreference) findPreference(DISPLAY_QR_CALLBUTTON);
@@ -447,6 +452,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         editor.putBoolean(MessagingPreferenceActivity.NOTIFICATION_ENABLED, enabled);
 
         editor.apply();
+    }
+
+    public static boolean getDirectCallEnabled(Context context) {
+    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+    boolean directCallEnabled = prefs.getBoolean(MessagingPreferenceActivity.DIRECT_CALL_PREF,false);
+    return directCallEnabled;
     }
 
     private void registerListeners() {
