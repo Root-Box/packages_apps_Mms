@@ -885,7 +885,7 @@
     <string name="pref_summary_input_type">Select the soft keyboard to use when composing messages</string>
 
     <!-- QM Preferences -->
-    <string name="pref_quickmessage">QuickMessage and Reply</string>
+    <string name="pref_quickmessage">Quick Message and Reply</string>
     <string name="pref_quickmessage_title">Show QuickMessage</string>
     <string name="pref_quickmessage_summary">Display the QuickMessage pop-up for incoming SMS messages</string>
     <string name="pref_wake_unlock_title">Wake and unlock</string>
@@ -908,7 +908,8 @@
     <string name="toast_sending_message">Sending message</string>
 
     <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Quick reply</string>
+    <string name="qm_quick_reply">Reply</string>
+    <string name="qm_mark_read">Read</string>
 
     <string name="direct_call_title">Direct Call</string>
     <string name="direct_call_summary">Picking up the phone calls the current contact</string>
