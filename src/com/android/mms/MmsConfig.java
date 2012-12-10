@@ -82,6 +82,9 @@ public class MmsConfig {
     // converting to mms if we reach the required number of segments.
     private static boolean mEnableSplitSMS = false;
 
+    // Support to hide sprint VVM's 9016 text mesages.
+    private static boolean mEnableSprintVVM = false;
+
     private static boolean mEnableSlideDuration = true;
     private static boolean mEnableMMSReadReports = true;        // key: "enableMMSReadReports"
     private static boolean mEnableSMSDeliveryReports = true;    // key: "enableSMSDeliveryReports"
@@ -262,6 +265,10 @@ public class MmsConfig {
         return mEnableGroupMms;
     }
 
+    public static boolean isSuppressedSprintVVM(String address) {
+        return mEnableSprintVVM && address.contentEquals("9016");
+    }
+
     public static final void beginDocument(XmlPullParser parser, String firstElementName) throws XmlPullParserException, IOException
     {
         int type;
@@ -329,6 +336,8 @@ public class MmsConfig {
                             mEnableMultipartSMS = "true".equalsIgnoreCase(text);
                         } else if ("enableSplitSMS".equalsIgnoreCase(value)) {
                             mEnableSplitSMS = "true".equalsIgnoreCase(text);
+                        } else if ("enableSprintVVM".equalsIgnoreCase(value)) {
+                            mEnableSprintVVM = "true".equalsIgnoreCase(text);
                         } else if ("enableSlideDuration".equalsIgnoreCase(value)) {
                             mEnableSlideDuration = "true".equalsIgnoreCase(text);
                         } else if ("enableMMSReadReports".equalsIgnoreCase(value)) {
