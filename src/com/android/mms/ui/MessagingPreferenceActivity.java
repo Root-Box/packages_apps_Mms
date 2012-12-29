@@ -99,10 +99,11 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String QM_CLOSE_ALL_ENABLED      = "pref_key_close_all";
     public static final String QM_DARK_THEME_ENABLED     = "pref_dark_theme";
 
-    private static final String DIRECT_CALL_PREF = "direct_call_pref";
+    private static final String DIRECT_CALL_PREF         = "direct_call_pref";
+    public static final String MESSAGE_FONT_SIZE         = "pref_key_mms_message_font_size";
 
     // Menu entries
-    private static final int MENU_RESTORE_DEFAULTS    = 1;
+    private static final int MENU_RESTORE_DEFAULTS       = 1;
 
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;

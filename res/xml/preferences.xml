@@ -243,5 +243,13 @@
             android:key="direct_call_pref"
             android:title="@string/direct_call_title"
             android:summary="@string/direct_call_summary"/>
+        <ListPreference
+            android:key="pref_key_mms_message_font_size"
+            android:defaultValue="18"
+            android:title="@string/pref_title_mms_message_font_size"
+            android:summary="@string/pref_summary_mms_message_font_size"
+            android:entries="@array/pref_mms_message_font_size_entries"
+            android:entryValues="@array/pref_mms_message_font_size_values"
+            android:dialogTitle="@string/pref_dialogtitle_mms_message_font_size"/>
   </PreferenceCategory>
 </PreferenceScreen>
