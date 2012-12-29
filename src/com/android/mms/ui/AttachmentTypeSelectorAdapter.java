@@ -39,11 +39,12 @@ public class AttachmentTypeSelectorAdapter extends IconListAdapter {
     public final static int ADD_SOUND               = 4;
     public final static int RECORD_SOUND            = 5;
     public final static int ADD_SLIDESHOW           = 6;
+    public final static int ADD_CONTACT_INFO        = 7;
 
     public AttachmentTypeSelectorAdapter(Context context, int mode) {
         super(context, getData(mode, context));
     }
-    
+
     public int buttonToCommand(int whichButton) {
         AttachmentListItem item = (AttachmentListItem)getItem(whichButton);
         return item.getCommand();
@@ -51,6 +52,10 @@ public class AttachmentTypeSelectorAdapter extends IconListAdapter {
 
     protected static List<IconListItem> getData(int mode, Context context) {
         List<IconListItem> data = new ArrayList<IconListItem>(7);
+
+        addItem(data, context.getString(R.string.attach_contact_info),
+                R.drawable.ic_menu_contact, ADD_CONTACT_INFO);
+
         addItem(data, context.getString(R.string.attach_image),
                 R.drawable.ic_attach_picture_holo_light, ADD_IMAGE);
 

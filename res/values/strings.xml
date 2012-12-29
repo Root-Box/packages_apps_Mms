@@ -216,6 +216,8 @@
     <string name="cannot_send_message_reason">Your message has no valid recipients.</string>
     <!-- Error message displayed when the user attempts to forward a message with DRM-locked contents -->
     <string name="cannot_forward_drm_obj">The DRM object included in the message can\'t be forwarded.</string>
+    <!-- Error message displayed when the user attempts to attach a contact whose ID could not be resolved -->
+    <string name="cannot_find_contact">The contact you selected could not be attached.</string>
 
     <!-- Brief message that appears when converting a message from SMS to MMS. -->
     <string name="converting_to_picture_message">Converting to multimedia message\u2026</string>
@@ -543,6 +545,8 @@
     <string name="attach_record_sound">Record audio</string>
     <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
     <string name="attach_slideshow">Slideshow</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <string name="attach_contact_info">Contact Information</string>
 
     <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
     <string name="select_bottom_text">Text on bottom</string>

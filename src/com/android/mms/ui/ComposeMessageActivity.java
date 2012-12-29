@@ -76,9 +76,11 @@ import android.preference.PreferenceManager;
 import android.provider.CalendarContract;
 import android.provider.CalendarContract.Events;
 import android.provider.ContactsContract;
+import android.provider.ContactsContract.CommonDataKinds;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Contacts;
+import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Intents;
 import android.provider.ContactsContract.QuickContact;
 import android.provider.MediaStore.Images;
@@ -206,10 +208,11 @@ public class ComposeMessageActivity extends Activity
     public static final int REQUEST_CODE_TAKE_VIDEO       = 103;
     public static final int REQUEST_CODE_ATTACH_SOUND     = 104;
     public static final int REQUEST_CODE_RECORD_SOUND     = 105;
-    public static final int REQUEST_CODE_CREATE_SLIDESHOW = 106;
-    public static final int REQUEST_CODE_ECM_EXIT_DIALOG  = 107;
-    public static final int REQUEST_CODE_ADD_CONTACT      = 108;
-    public static final int REQUEST_CODE_PICK             = 109;
+    public static final int REQUEST_CODE_ATTACH_CONTACT   = 106;
+    public static final int REQUEST_CODE_CREATE_SLIDESHOW = 107;
+    public static final int REQUEST_CODE_ECM_EXIT_DIALOG  = 108;
+    public static final int REQUEST_CODE_ADD_CONTACT      = 109;
+    public static final int REQUEST_CODE_PICK             = 110;
 
     private static final String TAG = "Mms/compose";
 
@@ -3176,6 +3179,12 @@ public class ComposeMessageActivity extends Activity
                 editSlideshow();
                 break;
 
+            case AttachmentTypeSelectorAdapter.ADD_CONTACT_INFO:
+                final Intent intent = new Intent(Intent.ACTION_PICK,
+                        Contacts.CONTENT_URI);
+                startActivityForResult(intent, REQUEST_CODE_ATTACH_CONTACT);
+                break;
+
             default:
                 break;
         }
@@ -3328,6 +3337,10 @@ public class ComposeMessageActivity extends Activity
                 }
                 break;
 
+            case REQUEST_CODE_ATTACH_CONTACT:
+                showContactInfoDialog(data.getData());
+                break;
+
             case REQUEST_CODE_ECM_EXIT_DIALOG:
                 boolean outOfEmergencyMode = data.getBooleanExtra(EXIT_ECM_RESULT, false);
                 if (outOfEmergencyMode) {
@@ -3403,6 +3416,62 @@ public class ComposeMessageActivity extends Activity
                 handler.post(populateWorker);
             }
         }, "ComoseMessageActivity.processPickResult").start();
+    }
+
+    private void showContactInfoDialog(Uri contactUri) {
+
+        String contactId = null,
+               displayName = null;
+        Cursor contactCursor = getContentResolver().query(contactUri,
+                new String[] {Contacts._ID, Contacts.DISPLAY_NAME}, null, null, null);
+        if(contactCursor.moveToFirst()){
+            contactId = contactCursor.getString(0);
+            displayName = contactCursor.getString(1);
+        }
+        else {
+            Toast.makeText(this, R.string.cannot_find_contact, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        final Cursor entryCursor = getContentResolver().query(Data.CONTENT_URI,
+                new String[] {
+                    Data._ID,
+                    Data.DATA1,
+                    Data.DATA2,
+                    Data.DATA3,
+                    Data.MIMETYPE
+                },
+                Data.CONTACT_ID + "=? AND ("
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=? OR "
+                        + Data.MIMETYPE + "=?)",
+                new String[] {
+                    contactId,
+                    CommonDataKinds.Phone.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Email.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.StructuredPostal.CONTENT_ITEM_TYPE,
+                    CommonDataKinds.Website.CONTENT_ITEM_TYPE
+                },
+                Data.DATA2
+            );
+
+        ContactEntryAdapter adapter = new ContactEntryAdapter(this, entryCursor);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.ic_dialog_attach);
+        builder.setTitle(displayName);
+        builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                entryCursor.moveToPosition(which);
+                String value = entryCursor.getString(entryCursor.getColumnIndex(Data.DATA1));
+                int start = mTextEditor.getSelectionStart();
+                int end = mTextEditor.getSelectionEnd();
+                mTextEditor.getText().replace(Math.min(start, end), Math.max(start, end), value);
+                dialog.dismiss();
+            }
+        });
+        builder.show();
     }
 
     private final ResizeImageResultCallback mResizeImageCallback = new ResizeImageResultCallback() {
