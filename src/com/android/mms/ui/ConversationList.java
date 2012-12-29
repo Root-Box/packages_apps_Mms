@@ -100,6 +100,7 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
     public static final int MENU_VIEW                 = 1;
     public static final int MENU_VIEW_CONTACT         = 2;
     public static final int MENU_ADD_TO_CONTACTS      = 3;
+    public static final int MENU_MARK_ALL_READ        = 4;
 
     public static boolean mIsRunning;
 
@@ -425,6 +426,9 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
                 // The invalid threadId of -1 means all threads here.
                 confirmDeleteThread(-1L, mQueryHandler);
                 break;
+            case R.id.action_mark_all_read:
+                Conversation.markAllConversationsAsRead(getApplicationContext());
+                break;
             case R.id.action_settings:
                 Intent intent = new Intent(this, MessagingPreferenceActivity.class);
                 startActivityIfNeeded(intent, -1);
@@ -521,6 +525,7 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
                 }
             }
             menu.add(0, MENU_DELETE, 0, R.string.menu_delete);
+            menu.add(0, MENU_MARK_ALL_READ, 0, R.string.menu_mark_all_read);
         }
     };
 

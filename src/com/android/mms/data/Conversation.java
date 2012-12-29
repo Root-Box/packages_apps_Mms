@@ -62,6 +62,10 @@ public class Conversation {
         "seen"
     };
 
+    private static final String[] READ_PROJECTION = new String[] {
+        "read"
+    };
+
     private static final int ID             = 0;
     private static final int DATE           = 1;
     private static final int MESSAGE_COUNT  = 2;
@@ -1061,6 +1065,29 @@ public class Conversation {
         thread.start();
     }
 
+    public static void markAllConversationsAsRead(final Context context) {
+        if (DELETEDEBUG || DEBUG) {
+            Contact.logWithTrace(TAG, "Conversation.markAllConversationsAsRead");
+        }
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                if (DELETEDEBUG) {
+                    Log.d(TAG, "Conversation.markAllConversationsAsRead.run");
+                }
+                blockingMarkAllSmsAsRead(context);
+                blockingMarkAllMmsAsRead(context);
+
+                // Always update notifications regardless of the read state.
+                MessagingNotification.blockingUpdateAllNotifications(context,
+                        MessagingNotification.THREAD_NONE);
+            }
+        }, "Conversation.markAllConversationsAsRead");
+        thread.setPriority(Thread.MIN_PRIORITY);
+        thread.start();
+    }
+
     public static void markAllConversationsAsSeen(final Context context) {
         if (DELETEDEBUG || DEBUG) {
             Contact.logWithTrace(TAG, "Conversation.markAllConversationsAsSeen");
@@ -1082,6 +1109,41 @@ public class Conversation {
         }, "Conversation.markAllConversationsAsSeen");
         thread.setPriority(Thread.MIN_PRIORITY);
         thread.start();
+    }
+
+    private static void blockingMarkAllSmsAsRead(final Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(Sms.Inbox.CONTENT_URI,
+                READ_PROJECTION,
+                "read=0",
+                null,
+                null);
+
+        int count = 0;
+
+        if (cursor != null) {
+            try {
+                count = cursor.getCount();
+            } finally {
+                cursor.close();
+            }
+        }
+
+        if (count == 0) {
+            return;
+        }
+
+        if (DELETEDEBUG || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
+            Log.d(TAG, "mark " + count + " SMS msgs as read");
+        }
+
+        ContentValues values = new ContentValues(1);
+        values.put("read", 1);
+
+        resolver.update(Sms.Inbox.CONTENT_URI,
+                values,
+                "read=0",
+                null);
     }
 
     private static void blockingMarkAllSmsMessagesAsSeen(final Context context) {
@@ -1117,6 +1179,42 @@ public class Conversation {
                 values,
                 "seen=0",
                 null);
+    }
+
+    private static void blockingMarkAllMmsAsRead(final Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(Mms.Inbox.CONTENT_URI,
+                READ_PROJECTION,
+                "read=0",
+                null,
+                null);
+
+        int count = 0;
+
+        if (cursor != null) {
+            try {
+                count = cursor.getCount();
+            } finally {
+                cursor.close();
+            }
+        }
+
+        if (count == 0) {
+            return;
+        }
+
+        if (DELETEDEBUG || Log.isLoggable(LogTag.APP, Log.VERBOSE)) {
+            Log.d(TAG, "mark " + count + " MMS msgs as read");
+        }
+
+        ContentValues values = new ContentValues(1);
+        values.put("read", 1);
+
+        resolver.update(Mms.Inbox.CONTENT_URI,
+                values,
+                "read=0",
+                null);
+
     }
 
     private static void blockingMarkAllMmsMessagesAsSeen(final Context context) {

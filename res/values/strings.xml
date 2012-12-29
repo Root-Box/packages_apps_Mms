@@ -32,6 +32,8 @@
 
     <!-- Menu item for starting a new conversation -->
     <string name="menu_compose_new">Compose</string>
+    <!-- Menu item for Mark all threads read -->
+    <string name="menu_mark_all_read">Mark all as Read</string>
     <!-- Menu item for accessing application settings -->
     <string name="menu_preferences">Settings</string>
     <!-- Menu shown in the context menu when long pressing on a message when the message contains
