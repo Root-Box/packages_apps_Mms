@@ -1024,7 +1024,7 @@ public class MessagingNotification {
 
                 Intent call = new Intent(Intent.ACTION_CALL);
                 call.setData(mostRecentNotification.mSender.getPhoneUri());
-                noti.addAction(R.drawable.ic_menu_call,
+                noti.addAction(R.drawable.ic_quick_reply_call,
                     callBack,
                     PendingIntent.getActivity(context,
                         new Random().nextInt(), // required to prevent cache from taking over
@@ -1043,7 +1043,7 @@ public class MessagingNotification {
                 if (DEBUG)
                     Log.v(TAG, dbgOut + quickText);
 
-                noti.addAction(R.drawable.ic_menu_msg_compose_holo_dark,
+                noti.addAction(R.drawable.ic_quick_reply_sms,
                     quickText,
                     PendingIntent.getActivity(context,
                         new Random().nextInt(), // required to prevent cache from taking over
@@ -1062,7 +1062,7 @@ public class MessagingNotification {
                 if (DEBUG)
                     Log.v(TAG, dbgOut + deleteText);
 
-                noti.addAction(R.drawable.emoji_nortab_delete,
+                noti.addAction(R.drawable.ic_quick_reply_delete,
                     deleteText,
                     PendingIntent.getActivity(context,
                         new Random().nextInt(), // required to prevent cache from taking over
@@ -1081,7 +1081,7 @@ public class MessagingNotification {
                 if (DEBUG)
                     Log.v(TAG, dbgOut + readText);
 
-                noti.addAction(R.drawable.emoji_nortab_thing,
+                noti.addAction(R.drawable.ic_quick_reply_mark_read,
                     readText,
                     PendingIntent.getActivity(context,
                         new Random().nextInt(), // required to prevent cache from taking over

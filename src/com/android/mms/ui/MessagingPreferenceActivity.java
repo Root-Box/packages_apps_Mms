@@ -465,9 +465,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
      */
     public static boolean getQRCallButtonEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean qrCallButtonEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_CALLBUTTON, true);
-        return qrCallButtonEnabled;
+        return prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_CALLBUTTON, true);
     }
 
     /**
@@ -478,9 +476,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
      */
     public static boolean getQRSmsReplyButtonEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean qrCallButtonEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_SMS_REPLY, true);
-        return qrCallButtonEnabled;
+        return prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_SMS_REPLY, true);
     }
 
     /**
@@ -491,9 +487,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
      */
     public static boolean getQRDeleteButtonEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean qrCallButtonEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_DELETE, false);
-        return qrCallButtonEnabled;
+        return prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_DELETE, false);
     }
 
     /**
@@ -504,8 +498,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity
      */
     public static boolean getQRMarkReadButtonEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean qrCallButtonEnabled =
-            prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_MARK_READ, false);
-        return qrCallButtonEnabled;
+        return prefs.getBoolean(MessagingPreferenceActivity.DISPLAY_QR_MARK_READ, false);
     }
 }

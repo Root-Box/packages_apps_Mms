@@ -183,9 +183,11 @@ public class QuickReply extends Activity implements OnDismissListener, OnClickLi
         if (deleteSms || markSmsRead) {
             // user clicked delete thread
             if (deleteSms) {
-                Log.v(TAG, "QuickReply action:" +
-                    " message delete returned { " + deleteMessage() + " }");
+                // first mark read as read
                 setRead();
+                // then delete
+                Log.i(TAG, "QuickReply action:" +
+                    " message delete returned { " + deleteMessage() + " }");
                 finish();
             }
 
