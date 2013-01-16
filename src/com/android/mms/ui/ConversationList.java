@@ -399,6 +399,16 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
         if (item != null) {
             item.setVisible(mListAdapter.getCount() > 0);
         }
+        item = menu.findItem(R.id.action_mark_all_read);
+        if (item != null) {
+            if (Conversation.areAllConversationsRead(getApplicationContext()) == 0) {
+                item.setVisible(false);
+                item.setEnabled(false);
+            } else {
+                item.setVisible(true);
+                item.setEnabled(true);
+            }
+        }
         if (!LogTag.DEBUG_DUMP) {
             item = menu.findItem(R.id.action_debug_dump);
             if (item != null) {

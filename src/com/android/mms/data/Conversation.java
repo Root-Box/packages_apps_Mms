@@ -1065,6 +1065,26 @@ public class Conversation {
         thread.start();
     }
 
+    public static int areAllConversationsRead(final Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        Cursor cursor = resolver.query(Sms.Inbox.CONTENT_URI,
+                READ_PROJECTION,
+                "read=0",
+                null,
+                null);
+
+        if (cursor != null) {
+            try {
+                return cursor.getCount();
+            } finally {
+                cursor.close();
+            }
+        }
+
+        return 0;
+
+    }
+
     public static void markAllConversationsAsRead(final Context context) {
         if (DELETEDEBUG || DEBUG) {
             Contact.logWithTrace(TAG, "Conversation.markAllConversationsAsRead");
