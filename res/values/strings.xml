@@ -920,6 +920,7 @@
     <string name="qm_quick_reply">Reply</string>
     <string name="qm_mark_read">Read</string>
 
+
     <string name="direct_call_title">Direct Call</string>
     <string name="direct_call_summary">Picking up the phone calls the current contact</string>
 
@@ -927,5 +928,14 @@
     <string name="pref_title_mms_message_font_size">Message font size</string>
     <string name="pref_summary_mms_message_font_size">Change font size of message view</string>
     <string name="pref_dialogtitle_mms_message_font_size">Select font size</string>
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Privacy mode</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Hide sender and message in status bar and disable Quick reply</string>
+    <string name="notification_single_title_privacy_mode">New message</string>
+    <string name="notification_single_text_privacy_mode">1 unread message</string>
+    <string name="notification_multiple_title_privacy_mode">New messages</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> unread messages</string>
+    <string name="notification_ticker_privacy_mode">New message received</string>
 
 </resources>
