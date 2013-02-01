@@ -960,7 +960,12 @@ public class MessagingNotification {
                 vibrate = "always".equals(vibrateWhen);
             }
             if (vibrate) {
-                defaults |= Notification.DEFAULT_VIBRATE;
+                if (customVibration == null) {
+                    defaults |= Notification.DEFAULT_VIBRATE;
+                }
+                else {
+                    noti.setVibrate(customVibration);
+                }
             }
 
             String ringtoneStr = sp.getString(MessagingPreferenceActivity.NOTIFICATION_RINGTONE,
