@@ -17,6 +17,9 @@
  */
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_theme">
+
     <Preference
         android:title="@string/themes"
         android:summary="@string/themes_summary"
@@ -26,6 +29,8 @@
             android:targetClass="com.android.mms.themes.Themes"
             android:targetPackage="com.android.mms" />
     </Preference>
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/pref_sms_storage_title"

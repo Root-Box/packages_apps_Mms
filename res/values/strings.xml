@@ -921,8 +921,9 @@
     <!-- Start of adding custom theme'n aspects to Mms
          Much thanks to @DroidJunk (jimmy miller) for the guide -->
     <!-- MMS THEME SETTINGS -->
+    <string name="pref_theme">THEME</string>
     <string name="themes">Mms theme Settings</string>
-    <string name="themes_summary">Change the way mms looks</string>
+    <string name="themes_summary">Customize Mms looks</string>
     <string name="themes_conv_list_title">Conversations list</string>
     <string name="themes_conv_list_summary">Convs list screen colors</string>
     <string name="themes_msg_list_title">Messaging style</string>
