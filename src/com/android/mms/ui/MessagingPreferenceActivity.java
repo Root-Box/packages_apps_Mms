@@ -116,13 +116,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mQrDelete;
     private CheckBoxPreference mQrMarkRead;
 
-    // QuickReply options
-    private PreferenceCategory mQuickReplyCat;
-    private CheckBoxPreference mQrCallBack;
-    private CheckBoxPreference mQrSmsReply;
-    private CheckBoxPreference mQrDelete;
-    private CheckBoxPreference mQrMarkRead;
-
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -157,7 +150,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mMmsLimitPref = findPreference("pref_key_mms_delete_limit");
         mClearHistoryPref = findPreference("pref_key_mms_clear_history");
         mEnableNotificationsPref = (CheckBoxPreference) findPreference(NOTIFICATION_ENABLED);
-        mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mQuickReplyCat = (PreferenceCategory) findPreference("category_quick_reply");
         mQrCallBack = (CheckBoxPreference) findPreference(DISPLAY_QR_CALLBUTTON);
         mQrSmsReply = (CheckBoxPreference) findPreference(DISPLAY_QR_SMS_REPLY);
@@ -173,8 +165,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mMmsRetrievalDuringRoamingPref.setChecked(Settings.System.getInt(resolver,
                 Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING, 0) == 1);
 
-        mVibrateEntries = getResources().getTextArray(R.array.prefEntries_vibrateWhen);
-        mVibrateValues = getResources().getTextArray(R.array.prefValues_vibrateWhen);
         mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
         mVibratePref = (CheckBoxPreference) findPreference(NOTIFICATION_VIBRATE);
         mRingtonePref = (RingtonePreference) findPreference(NOTIFICATION_RINGTONE);
@@ -275,9 +265,6 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         // Fix up the recycler's summary with the correct values
         setSmsDisplayLimit();
         setMmsDisplayLimit();
-
-
-        adjustVibrateSummary(mVibrateWhenPref.getValue());
 
         // set a listener to avoid adding more than 3 actions
         mQrCallBack.setOnPreferenceClickListener(quickRepliesClickAction);
