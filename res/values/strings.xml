@@ -944,4 +944,9 @@
     <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> unread messages</string>
     <string name="notification_ticker_privacy_mode">New message received</string>
 
+    <!-- Message signature -->
+    <string name="msg_sig_title">Signature</string>
+    <string name="msg_sig_summary">Set a custom Signature for messages</string>
+    <string name="msg_sig_enter_text">Enter signature text</string>
+
 </resources>

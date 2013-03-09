@@ -4155,6 +4155,12 @@ public class ComposeMessageActivity extends Activity
             // them back once the recipient list has settled.
             removeRecipientsListeners();
 
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+            String mSignature = prefs.getString(MessagingPreferenceActivity.MSG_SIGNATURE, "");
+            if (!mSignature.isEmpty()) {
+                mWorkingMessage.setText(mWorkingMessage.getText() + "\n" + mSignature);
+            }
+
             mWorkingMessage.send(mDebugRecipients);
 
             mSentMessage = true;

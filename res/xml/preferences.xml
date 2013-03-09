@@ -273,5 +273,12 @@
             android:entries="@array/pref_mms_message_font_size_entries"
             android:entryValues="@array/pref_mms_message_font_size_values"
             android:dialogTitle="@string/pref_dialogtitle_mms_message_font_size"/>
+        <EditTextPreference
+            android:key="pref_msg_signature"
+            android:title="@string/msg_sig_title"
+            android:summary="@string/msg_sig_summary"
+            android:dialogTitle="@string/msg_sig_title"
+            android:hint="@string/msg_sig_enter_text"
+            android:defaultValue="" />
   </PreferenceCategory>
 </PreferenceScreen>
