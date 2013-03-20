@@ -956,4 +956,10 @@
     <string name="hide_avatar">Hide Avatar</string>
     <string name="hide_avatar_summary">Hide avatar in the conversations list screen</string>
 
+    <!-- Multi Contact selector -->
+    <string name="pref_multi_select">Easy Selector</string>
+    <string name="pref_multi_select_summary">Select multiple contacts using a checkbox</string>
+    <string name="add_recipients">Add recipients</string>
+    <string name="add_recipients_positive_button">Add</string>
+
 </resources>

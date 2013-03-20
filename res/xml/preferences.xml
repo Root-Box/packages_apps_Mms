@@ -51,6 +51,11 @@
     <!-- SMS Settings -->
     <PreferenceCategory android:title="@string/pref_sms_settings_title"
         android:key="pref_key_sms_settings" >
+        <CheckBoxPreference
+            android:key="pref_easy_selector"
+            android:title="@string/pref_multi_select"
+            android:summary="@string/pref_multi_select_summary"
+            android:defaultValue="false" />
 
         <CheckBoxPreference
             android:defaultValue="false"
