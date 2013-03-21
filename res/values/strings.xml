@@ -824,10 +824,6 @@
     <string name="pref_extra_settings">Extra settings</string>
     <string name="pref_char_settings">Char settings</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Strip unicode</string>
-    <string name="pref_summary_strip_unicode">Substitute common characters that are not supported in 160 character SMS messages</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji support</string>
     <string name="pref_summary_enable_emojis">Enable support for unicode emojis, a set of 471 nice emoticons</string>
@@ -873,6 +869,12 @@
     <string name="pref_summary_mms_notification_vibrate_call">Allow vibrate while on a call</string>
     <string name="pref_title_mms_notification_vibrate_custom">Custom vibrate pattern</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on in milliseconds: off, on, off, on, ...</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_unicode_stripping">Strip unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Leave characters intact</string>
+    <string name="pref_unicode_stripping_non_encodable">Strip non-encodable characters</string>
+    <string name="pref_unicode_stripping_all">Strip all unicode characters</string>
 
     <!-- Enable quick emojis -->
     <string name="pref_title_enable_quick_emojis">Quick emoji button</string>
@@ -923,7 +925,7 @@
     <string name="qm_quick_reply">Reply</string>
     <string name="qm_mark_read">Read</string>
 
-
+    <!-- Direct call -->
     <string name="direct_call_title">Direct Call</string>
     <string name="direct_call_summary">Picking up the phone calls the current contact</string>
 

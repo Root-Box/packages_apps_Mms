@@ -153,7 +153,7 @@ public class QuickMessagePopup extends Activity implements
     private boolean mWakeAndUnlock = false;
     private boolean mDarkTheme = false;
     private boolean mFullTimestamp = false;
-    private boolean mStripUnicode = false;
+    private int mUnicodeStripping = MessagingPreferenceActivity.UNICODE_STRIPPING_LEAVE_INTACT;
     private boolean mEnableEmojis = false;
     private int mInputMethod;
 
@@ -188,7 +188,8 @@ public class QuickMessagePopup extends Activity implements
         mFullTimestamp = prefs.getBoolean(MessagingPreferenceActivity.FULL_TIMESTAMP, false);
         mCloseClosesAll = prefs.getBoolean(MessagingPreferenceActivity.QM_CLOSE_ALL_ENABLED, false);
         mWakeAndUnlock = prefs.getBoolean(MessagingPreferenceActivity.QM_LOCKSCREEN_ENABLED, false);
-        mStripUnicode = prefs.getBoolean(MessagingPreferenceActivity.STRIP_UNICODE, false);
+        mUnicodeStripping = prefs.getInt(MessagingPreferenceActivity.UNICODE_STRIPPING_VALUE,
+                MessagingPreferenceActivity.UNICODE_STRIPPING_LEAVE_INTACT);
         mEnableEmojis = prefs.getBoolean(MessagingPreferenceActivity.ENABLE_EMOJIS, false);
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
@@ -938,13 +939,19 @@ public class QuickMessagePopup extends Activity implements
      * that would switch the message from 7-bit GSM encoding (160 char limit)
      * to 16-bit Unicode encoding (70 char limit).
      */
-    private class StripUnicode implements InputFilter {
+    private static class StripUnicode implements InputFilter {
 
         private CharsetEncoder gsm =
             Charset.forName("gsm-03.38-2000").newEncoder();
 
         private Pattern diacritics =
             Pattern.compile("\\p{InCombiningDiacriticalMarks}");
+
+        private boolean mStripNonDecodableOnly = false;
+
+        StripUnicode(boolean stripping) {
+            mStripNonDecodableOnly = stripping;
+        }
 
         public CharSequence filter(CharSequence source, int start, int end,
                                    Spanned dest, int dstart, int dend) {
@@ -956,7 +963,7 @@ public class QuickMessagePopup extends Activity implements
                 char c = source.charAt(i);
 
                 // Character is encodable by GSM, skip filtering
-                if (gsm.canEncode(c)) {
+                if (mStripNonDecodableOnly && gsm.canEncode(c)) {
                     output.append(c);
                 }
                 // Character requires Unicode, try to replace it
@@ -1135,8 +1142,11 @@ public class QuickMessagePopup extends Activity implements
 
                 LengthFilter lengthFilter = new LengthFilter(MmsConfig.getMaxTextLimit());
 
-                if (mStripUnicode) {
-                    qmReplyText.setFilters(new InputFilter[] { new StripUnicode(), lengthFilter });
+                if (mUnicodeStripping != MessagingPreferenceActivity.UNICODE_STRIPPING_LEAVE_INTACT) {
+                    boolean stripNonDecodableOnly = mUnicodeStripping == MessagingPreferenceActivity
+                            .UNICODE_STRIPPING_NON_DECODABLE;
+                    qmReplyText.setFilters(new InputFilter[] { new StripUnicode(stripNonDecodableOnly),
+                            lengthFilter });
                 } else {
                     qmReplyText.setFilters(new InputFilter[] { lengthFilter });
                 }
