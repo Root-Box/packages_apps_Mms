@@ -222,14 +222,8 @@
             android:title="@string/pref_title_template_gestures_sensitivity" />
     </PreferenceCategory>
 
-    <!-- Extra Settings -->
-    <PreferenceCategory android:title="@string/pref_extra_settings">
-        <CheckBoxPreference
-            android:key="pref_key_strip_unicode"
-            android:title="@string/pref_title_strip_unicode"
-            android:summary="@string/pref_summary_strip_unicode"
-            android:defaultValue="false" />
-
+    <!-- Char Settings -->
+    <PreferenceCategory android:title="@string/pref_char_settings">
         <CheckBoxPreference
             android:key="pref_key_enable_emojis"
             android:title="@string/pref_title_enable_emojis"
@@ -255,16 +249,27 @@
             android:summary="@string/pref_summary_mms_use_sent_timestamp"
             android:defaultValue="false" />
 
-        <ListPreference
-            android:key="pref_key_mms_input_type"
-            android:title="@string/pref_title_input_type"
-            android:summary="@string/pref_summary_input_type"
-            android:entries="@array/pref_entries_input_type"
-            android:entryValues="@array/pref_values_input_type" />
+        <CheckBoxPreference
+            android:key="pref_key_strip_unicode"
+            android:title="@string/pref_title_strip_unicode"
+            android:summary="@string/pref_summary_strip_unicode"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Extra Settings -->
+    <PreferenceCategory android:title="@string/pref_extra_settings">
         <CheckBoxPreference
             android:key="direct_call_pref"
             android:title="@string/direct_call_title"
             android:summary="@string/direct_call_summary"/>
+
+        <CheckBoxPreference
+            android:key="pref_hide_avatar"
+            android:title="@string/hide_avatar"
+            android:summary="@string/hide_avatar_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:key="pref_key_mms_message_font_size"
             android:defaultValue="18"
@@ -273,6 +278,7 @@
             android:entries="@array/pref_mms_message_font_size_entries"
             android:entryValues="@array/pref_mms_message_font_size_values"
             android:dialogTitle="@string/pref_dialogtitle_mms_message_font_size"/>
+
         <EditTextPreference
             android:key="pref_msg_signature"
             android:title="@string/msg_sig_title"
@@ -280,5 +286,13 @@
             android:dialogTitle="@string/msg_sig_title"
             android:hint="@string/msg_sig_enter_text"
             android:defaultValue="" />
-  </PreferenceCategory>
+
+        <ListPreference
+            android:key="pref_key_mms_input_type"
+            android:title="@string/pref_title_input_type"
+            android:summary="@string/pref_summary_input_type"
+            android:entries="@array/pref_entries_input_type"
+            android:entryValues="@array/pref_values_input_type" />
+
+    </PreferenceCategory>
 </PreferenceScreen>

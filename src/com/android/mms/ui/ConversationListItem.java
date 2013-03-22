@@ -157,7 +157,13 @@ public class ConversationListItem extends RelativeLayout implements Contact.Upda
             mAvatarView.assignContactUri(null);
         }
         mAvatarView.setImageDrawable(avatarDrawable);
-        mAvatarView.setVisibility(View.VISIBLE);
+        // Hide avatar if setting set
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
+        if (prefs.getBoolean("pref_hide_avatar", false) == true) {
+            mAvatarView.setVisibility(View.GONE);
+        } else {
+            mAvatarView.setVisibility(View.VISIBLE);
+        }
     }
 
     private void updateFromView() {

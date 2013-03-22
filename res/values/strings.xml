@@ -820,10 +820,9 @@
     <!-- In message list items, this string builds the timestamp line when the message is in a group [CHAR LIMIT=NONE] -->
     <string name="message_timestamp_format"><xliff:g id="string" example="Fred Flinstone">%1$s</xliff:g>\u0020-\u0020<xliff:g id="string" example="9:39AM">%2$s</xliff:g></string>
 
-    <!-- CYANOGENMOD EDITS START -->
-
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Extra settings</string>
+    <string name="pref_char_settings">Char settings</string>
 
     <!-- Strip unicode -->
     <string name="pref_title_strip_unicode">Strip unicode</string>
@@ -948,5 +947,13 @@
     <string name="msg_sig_title">Signature</string>
     <string name="msg_sig_summary">Set a custom Signature for messages</string>
     <string name="msg_sig_enter_text">Enter signature text</string>
+
+    <!-- Mms Breath -->
+    <string name="mms_breath">Breathing SMS</string>
+    <string name="mms_breath_summary">Will give your statusbar notifications a breathing effect</string>
+
+    <!-- Avatar -->
+    <string name="hide_avatar">Hide Avatar</string>
+    <string name="hide_avatar_summary">Hide avatar in the conversations list screen</string>
 
 </resources>
