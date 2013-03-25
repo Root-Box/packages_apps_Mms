@@ -492,4 +492,10 @@
     <string name="hide_avatar">Скрывать аватар</string>
     <string name="hide_avatar_summary">Скрывать аватарку в списке сообщений</string>
 
+    <!-- Multi Contact selector -->
+    <string name="pref_multi_select">Мульти-выбор</string>
+    <string name="pref_multi_select_summary">Выбрать несколько контактов \"галочкой\"</string>
+    <string name="add_recipients">Добавить получателей</string>
+    <string name="add_recipients_positive_button">Добавить</string>
+
 </resources>
