@@ -436,8 +436,6 @@
     <string name="pref_wake_unlock_summary">Пробуждать и разблокировать устройство при входящем сообщении (только для небезопасной блокировки экрана)</string>
     <string name="pref_close_all_title">Закрыть всё</string>
     <string name="pref_close_all_summary">Кнопка \"Закрыть\" закрывает все сообщения</string>
-    <string name="pref_dark_theme_title">Тёмная тема</string>
-    <string name="pref_dark_theme_summary">Если не выбрано, будет использована светлая тема</string>
     <string name="message_counter_separator">из</string>
 
     <!-- QM Dialog box buttons -->

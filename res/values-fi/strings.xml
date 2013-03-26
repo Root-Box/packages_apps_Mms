@@ -400,8 +400,6 @@
     <string name="pref_wake_unlock_summary">Herätä ja poista laitteen lukitus viestin saapuessa (vain epäturvallinen lukitusnäyttö)</string>
     <string name="pref_close_all_title">Sulje kaikki</string>
     <string name="pref_close_all_summary">Sulje-painike sulkee kaikki viestit</string>
-    <string name="pref_dark_theme_title">Käytä tummaa teemaa</string>
-    <string name="pref_dark_theme_summary">Jos ei valittuna, alkuperäinen \'kirkas\' teema on käytössä</string>
     <string name="message_counter_separator">/</string>
     <string name="button_close">Sulje</string>
     <string name="button_view">Lue</string>

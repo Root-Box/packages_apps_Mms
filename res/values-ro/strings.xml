@@ -396,8 +396,6 @@
     <string name="pref_wake_unlock_summary">"Trezeşte şi deblochează dispozitivul la recepţionarea unui mesaj (numai ecrane de blocare nesigure)"</string>
     <string name="pref_close_all_title">"Închideţi toate"</string>
     <string name="pref_close_all_summary">"Butonul Închidere închide toate mesajele"</string>
-    <string name="pref_dark_theme_title">"Utilizaţi tema întunecată"</string>
-    <string name="pref_dark_theme_summary">"Dacă nu este selectat, va fi utilizată tema \"deschisă\""</string>
     <string name="message_counter_separator">"din"</string>
     <string name="button_close">"Închideţi"</string>
     <string name="button_view">"Vizualizaţi"</string>

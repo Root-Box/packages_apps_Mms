@@ -422,8 +422,6 @@
     <string name="pref_wake_unlock_summary">Probudi i otključaj uređaj kad stigne poruka (samo nezaštićeni ekrani zaključavanja)</string>
     <string name="pref_close_all_title">Zatvori sve</string>
     <string name="pref_close_all_summary">Zatvori tipka zatvara sve poruke</string>
-    <string name="pref_dark_theme_title">Koristi tamnu temu</string>
-    <string name="pref_dark_theme_summary">Ako nije izabrano koristiti će se zadana \'svijetla\' tema</string>
     <string name="message_counter_separator">od</string>
 
     <!-- QM Dialog box buttons -->

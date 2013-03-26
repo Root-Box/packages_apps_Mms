@@ -405,8 +405,6 @@
     <string name="toast_sending_message">Enviando mensagem</string>
     <string name="qm_quick_reply">Resposta rápida</string>
     <string name="button_templates">Modelos</string>
-    <string name="pref_dark_theme_title">Usar tema escuro</string>
-    <string name="pref_dark_theme_summary">Se não estiver selecionado, será utilizado o tema \'claro\' padrão</string>
     <string name="pref_title_input_type">Tipo de teclado virtual</string>
     <string name="pref_summary_input_type">Selecione o tipo de teclado virtual para ser usado ao compor mensagens</string>
     <string name="pref_keyboard_new_line">Enter para uma nova linha</string>
