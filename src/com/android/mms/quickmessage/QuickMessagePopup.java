@@ -1169,6 +1169,11 @@ public class QuickMessagePopup extends Activity implements
          * @param qm - qm we are replying to (for sender details)
          */
         private void sendMessageAndMoveOn(String message, QuickMessage qm) {
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
+            String mSignature = prefs.getString(MessagingPreferenceActivity.MSG_SIGNATURE, "");
+            if (!mSignature.isEmpty()) {
+                message = message + "\n" + mSignature;
+            }
             sendQuickMessage(message, qm);
             // Close the current QM and move on
             int numMessages = mMessageList.size();
