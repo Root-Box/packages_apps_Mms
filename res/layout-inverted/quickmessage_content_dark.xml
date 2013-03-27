@@ -84,7 +84,7 @@
         android:fillViewport="true"
         android:minHeight="72dp"
         android:paddingTop="4dp"
-        android:background="@color/quickmessage_body_light_bg"
+        android:background="@color/quickmessage_body_dark_bg"
         android:paddingBottom="4dp" >
 
         <TextView
@@ -108,7 +108,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/quickmessage_body_light_bg"
+        android:background="@color/quickmessage_body_dark_bg"
         android:paddingTop="4dp"
         android:paddingLeft="6dp"
         android:paddingBottom="2dp" >
