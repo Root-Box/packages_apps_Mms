@@ -397,7 +397,11 @@
     <string name="pref_summary_strip_unicode">Замена не поддерживаемых символов в сообщении обычными</string>
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Включить emojis</string>
-    <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
+    <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 юникод смайлов</string>
+ 
+	<!-- Enable quick emojis -->
+    <string name="pref_title_enable_quick_emojis">Кнопка emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Отображение кнопки для быстрой вставки emoji</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
@@ -431,7 +435,7 @@
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Ответить</string>
-    <string name="qm_mark_read">Прочтено</string>
+    <string name="qm_mark_read">Прочитано</string>
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Тип клавиатуры</string>
@@ -439,4 +443,24 @@
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Добавить в календарь</string>
+	
+	<!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Размер шрифта</string>
+    <string name="pref_summary_mms_message_font_size">Изменение размера шрифта сообщений</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Выберите размер шрифта</string>
+	
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Защищенный режим</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Скрыть отправителя, текст сообщения и кнопку ответа в статусбаре</string>
+    <string name="notification_single_title_privacy_mode">Новое сообщение</string>
+    <string name="notification_single_text_privacy_mode">1 непрочитанное сообщение</string>
+    <string name="notification_multiple_title_privacy_mode">Новые сообщения</string>
+    <string name="notification_multiple_text_privacy_mode">Непрочитанные сообщения: <xliff:g id="number" example="3">%1$s</xliff:g></string>
+    <string name="notification_ticker_privacy_mode">Получено новое сообщение</string>
+
+    <!-- Message signature -->
+    <string name="msg_sig_title">Подпись</string>
+    <string name="msg_sig_summary">Задание подписи для всех сообщений</string>
+    <string name="msg_sig_enter_text">Введите текст подписи</string>
+    
 </resources>
