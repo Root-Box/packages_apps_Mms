@@ -367,9 +367,6 @@
     <string name="pref_extra_settings">Дополнительные настройки</string>
     <string name="pref_char_settings">Настройки символов</string>
     
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Раскрывать юникод</string>
-    <string name="pref_summary_strip_unicode">Замена неподдерживаемых символов в сообщении обычными</string>
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Включить emojis</string>
     <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
@@ -411,9 +408,20 @@
     <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
+	
+	<!-- Strip unicode -->
+	<string name="pref_title_unicode_stripping">Раскрывать юникод</string>
+	<string name="pref_unicode_stripping_leave_intact">Оставить символы как есть</string>
+	<string name="pref_unicode_stripping_non_encodable">Заменить некодируемые символы</string>
+	<string name="pref_unicode_stripping_all">Заменить все неподдерживаемые символы обычными</string>
+	
     <!-- Enable quick emojis -->
     <string name="pref_title_enable_quick_emojis">Быстрая вставка emoji</string>
     <string name="pref_summary_enable_quick_emojis">Показать кнопку рядом с полем ввода текста для быстрого доступа к emoji</string>
+	
+	<!-- Enable SoftBank emoji encoding -->
+	<string name="pref_title_enable_softbank_encoding">Стандарт emoji on SoftBank</string>
+	<string name="pref_summary_enable_softbank_encoding">Использовать стандарт оператора SoftBank для кодирования emoji</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
@@ -453,6 +461,8 @@
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Ответить</string>
     <string name="qm_mark_read">Прочтено</string>
+	
+	<!-- Direct call -->
     <string name="direct_call_title">Быстрый вызов</string>
     <string name="direct_call_summary">Сразу набирать номер абонента при нажатии на номер, не используя кнопку вызова</string>
 
