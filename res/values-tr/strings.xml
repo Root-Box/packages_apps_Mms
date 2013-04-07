@@ -351,8 +351,6 @@
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
     <string name="pref_extra_settings">Ekstra Ayarlar</string>
     <string name="pref_char_settings">Karakter Ayarları</string>
-    <string name="pref_title_strip_unicode">Evrensel kod şeridi</string>
-    <string name="pref_summary_strip_unicode">160 karakter SMS mesajlarında desteklenmeyen ortak karakterlerin yerine koy</string>
     <string name="pref_title_enable_emojis">Emoji Desteği</string>
     <string name="pref_summary_enable_emojis">Evrensel şerit kodlu emojis desteğini etkinleştirin,471 adet güzel simgeler mevcuttur</string>
     <string name="menu_insert_emoji">IEmojis gir</string>
@@ -388,6 +386,12 @@
     <string name="pref_summary_mms_notification_vibrate_call">Çağrıda titremeye izin ver</string>
     <string name="pref_title_mms_notification_vibrate_custom">Özel titreşim deseni</string>
     <string name="pref_text_mms_notification_vibrate_custom">Milisaniye içinde kapalı/açık şeklinde: kapalı, açık, kapalı, açık, ...</string>
+    <string name="pref_title_unicode_stripping">Evrensel kod şeridi</string>
+    <string name="pref_unicode_stripping_leave_intact">Karakterleri olduğu gibi bırakabilirsiniz</string>
+    <string name="pref_unicode_stripping_non_encodable">Çözülemeyen karakterleri ayır</string>
+    <string name="pref_unicode_stripping_all">Evrensel kodlu tüm karakterleri ayır</string>
+    <string name="pref_title_enable_quick_emojis">Hızlı emoji tuşu</string>
+    <string name="pref_summary_enable_quick_emojis">Hızlı emoji erişimi için metin alanının yanında yeni bir tuş göster</string>
     <string name="pref_title_mms_full_timestamp">Tam zaman etiketi</string>
     <string name="pref_summary_mms_full_timestamp">Gün ve zaman etiketini ekranda göster</string>
     <string name="pref_title_mms_use_sent_timestamp">Orjinal zaman etiketi</string>
