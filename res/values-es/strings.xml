@@ -418,4 +418,32 @@
     <string name="qm_mark_read">Leer</string>
 
     <!-- CYANOGENMOD ADDITIONS END -->
+    
+    <string name="attach_contact_info">Información de contacto</string>
+    <string name="pref_multi_select">Selector multiple</string>
+    <string name="pref_multi_select_summary">Selecciona múltiples contacto usando una casilla de verificación</string>
+    <string name="add_recipients">Agregar contacto</string>
+    <string name="add_recipients_positive_button">Agregar</string>
+    <string name="pref_title_save_location">Carpeta datos adjuntos</string>
+    <string name="pref_title_save_location_summary">Especificar carpeta para datos adjuntos.</string>
+    <string name="pref_title_notification_privacy_mode_enabled">Modo privacidad</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Ocultar remitente y mensaje en la barra de estado y deshabilitar la respuesta rápida</string>
+    <string name="notification_single_title_privacy_mode">Nuevo mensaje</string>
+    <string name="notification_single_text_privacy_mode">1 mensaje no leído</string>
+    <string name="notification_multiple_title_privacy_mode">Nuevos mensajes</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> mensajes no leídos</string>
+    <string name="notification_ticker_privacy_mode">Nuevo mensaje recibido</string>
+    <string name="pref_char_settings">Ajustes Caracteres</string>
+    <string name="pref_title_enable_quick_emojis">Botón rápido emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Mostrar un botón al lado de la entrada de texto para un rápido acceso a los emoji.</string>
+    <string name="direct_call_title">Llamada Directa</string>
+    <string name="direct_call_summary">Coger el teléfono y llama al contacto actual</string>
+    <string name="hide_avatar">Ocultar Avatar</string>
+    <string name="hide_avatar_summary">Ocultar avatar en la pantalla de conversación.</string>
+    <string name="pref_title_mms_message_font_size">Tamaño fuente de mensaje</string>
+    <string name="pref_summary_mms_message_font_size">Cambiar tamaño de la fuente de mensajes visualizados</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Seleccionar tamaño de fuente</string> 
+    <string name="msg_sig_title">Firma</string>
+    <string name="msg_sig_summary">Establecer una firma personalizada para los mensajes</string>
+    <string name="msg_sig_enter_text">Introduzca la firma</string>
 </resources>
