@@ -187,6 +187,8 @@
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"İletileri otomatik olarak al"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"Dolaşımda otomatik al"</string>
     <string name="pref_summary_mms_retrieval_during_roaming" msgid="2427892806582531020">"Dolaşırken iletileri otomatik olarak al"</string>
+    <string name="pref_title_save_location">Ek kayıt dosyası</string>
+    <string name="pref_title_save_location_summary">Eklerin kaydedileceği dosyayı belirleyin</string>
     <string name="confirm_dialog_title" msgid="2187213750475782725">"Silinsin mi?"</string>
     <string name="confirm_dialog_locked_title" msgid="8179085718150932242">"Kilitli ileti silinsin mi?"</string>
   <plurals name="confirm_delete_conversation">
@@ -392,6 +394,8 @@
     <string name="pref_unicode_stripping_all">Evrensel kodlu tüm karakterleri ayır</string>
     <string name="pref_title_enable_quick_emojis">Hızlı emoji tuşu</string>
     <string name="pref_summary_enable_quick_emojis">Hızlı emoji erişimi için metin alanının yanında yeni bir tuş göster</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">SoftBank emoji kodlama kullanın</string>
     <string name="pref_title_mms_full_timestamp">Tam zaman etiketi</string>
     <string name="pref_summary_mms_full_timestamp">Gün ve zaman etiketini ekranda göster</string>
     <string name="pref_title_mms_use_sent_timestamp">Orjinal zaman etiketi</string>
