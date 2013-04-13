@@ -1,26 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-/*
- * Copyright (C) 2007-2008 Esmertec AG.
- * Copyright (C) 2007-2008 The Android Open Source Project
- * QuickMessage: Copyright (C) 2012 The CyanogenMod Project (DvTonder)
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- -->
+<?xml version="1.0" encoding="utf-8"?>
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label">Messaggi</string>
     <string name="new_message">Nuovo messaggio</string>
     <string name="menu_call_back">Chiama <xliff:g id="NAME">%s</xliff:g></string>
@@ -107,7 +87,7 @@
     <string name="cannot_send_message">Impossibile inviare il messaggio</string>
     <string name="cannot_send_message_reason">Il messaggio non ha destinatari validi.</string>
     <string name="cannot_forward_drm_obj">Impossibile inoltrare l\'oggetto DRM incluso nel messaggio.</string>
-    <string name="cannot_find_contact">Il contatto selezionato potrebbe non essere allegato.</string>
+    <string name="cannot_find_contact">Il contatto selezionato non può essere allegato.</string>
     <string name="converting_to_picture_message">Conversione in messaggio multimediale...</string>
     <string name="cannot_add_slide_anymore">Impossibile aggiungere altre diapositive.</string>
     <string name="cannot_add_picture_and_video">Impossibile aggiungere video e immagine a una diapositiva.</string>
@@ -235,7 +215,7 @@
     <string name="attach_sound">Audio</string>
     <string name="attach_record_sound">Registra audio</string>
     <string name="attach_slideshow">Presentazione</string>
-    <string name="attach_contact_info">Informazioni del contatto</string>
+    <string name="attach_contact_info">Informazioni contatto</string>
     <string name="select_bottom_text">Testo in basso</string>
     <string name="select_top_text">Testo in alto</string>
     <string name="delivery_toast_body">Messaggio ricevuto da %s.</string>
@@ -322,8 +302,6 @@
     <string name="message_timestamp_format"><xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g></string>
     <string name="pref_extra_settings">Impostazioni aggiuntive</string>
     <string name="pref_char_settings">Impostazioni char</string>
-    <string name="pref_title_strip_unicode">Rimuovi unicode</string>
-    <string name="pref_summary_strip_unicode">Sostituisci caratteri comuni che non sono supportati nei messaggi SMS da 160 caratteri</string>
     <string name="pref_title_enable_emojis">Supporto emoji</string>
     <string name="pref_summary_enable_emojis">Abilita il supporto agli emoji unicode, un set di 471 graziosi \"emoticons\"</string>
     <string name="menu_insert_emoji">Inserisci emoji</string>
@@ -359,8 +337,14 @@
     <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante una chiamata</string>
     <string name="pref_title_mms_notification_vibrate_custom">Schema personalizzato</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatta off/on in millisecondi: off, on, off, on, ...</string>
+    <string name="pref_title_unicode_stripping">Rimuovi unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Lascia intatti i caratteri</string>
+    <string name="pref_unicode_stripping_non_encodable">Rimuovi i caratteri non codificati</string>
+    <string name="pref_unicode_stripping_all">Rimuovi tutti i caratteri unicode</string>
     <string name="pref_title_enable_quick_emojis">Tasto rapido emoji</string>
     <string name="pref_summary_enable_quick_emojis">Visualizzare un pulsante vicino alla zona di input di testo per l\'accesso rapido alle emoji</string>
+    <string name="pref_title_enable_softbank_encoding">Emoji SoftBank</string>
+    <string name="pref_summary_enable_softbank_encoding">Utilizza la codifica emoji SoftBank</string>
     <string name="pref_title_mms_full_timestamp">Timestamp completi</string>
     <string name="pref_summary_mms_full_timestamp">Visualizza data e ora nei timestamp</string>
     <string name="pref_title_mms_use_sent_timestamp">Timestamp originali</string>
@@ -387,12 +371,12 @@
     <string name="qm_quick_reply">Rispondi</string>
     <string name="qm_mark_read">Letto</string>
     <string name="direct_call_title">Chiamata diretta</string>
-    <string name="direct_call_summary">Prendendo il telefono sarà chiamato il contatto corrente</string>
-    <string name="pref_title_mms_message_font_size">Dimensione dei caratteri del messaggio</string>
+    <string name="direct_call_summary">Portando all\'orecchio il telefono sarà chiamato il contatto corrente</string>
+    <string name="pref_title_mms_message_font_size">Dimensione caratteri del messaggio</string>
     <string name="pref_summary_mms_message_font_size">Cambiare la dimensione del carattere di visualizzazione messaggio</string>
     <string name="pref_dialogtitle_mms_message_font_size">Selezionare la dimensione del carattere</string>
     <string name="pref_title_notification_privacy_mode_enabled">Modalità privacy</string>
-    <string name="pref_summary_notification_privacy_mode_enabled">Nascondere mittente e messaggio nella barra di stato e disabilitare la risposta veloce</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Nasconde mittente e messaggio nella barra di stato e disabilita la risposta veloce</string>
     <string name="notification_single_title_privacy_mode">Nuovo messaggio</string>
     <string name="notification_single_text_privacy_mode">1 messaggio non letto</string>
     <string name="notification_multiple_title_privacy_mode">Nuovi messaggi</string>
@@ -403,8 +387,8 @@
     <string name="msg_sig_enter_text">Immettere il testo della firma</string>
     <string name="mms_breath">Breathing SMS</string>
     <string name="mms_breath_summary">Darà alle notifiche della barra di stato un effetto lampeggiante</string>
-    <string name="hide_avatar">Nascondere Avatar</string>
-    <string name="hide_avatar_summary">Nascondere avatar nella schermata Lista conversazioni</string>
+    <string name="hide_avatar">Nascondi Avatar</string>
+    <string name="hide_avatar_summary">Nascondi avatar nella schermata Lista conversazioni</string>
     <string name="pref_multi_select">Selettore facile</string>
     <string name="pref_multi_select_summary">Selezionare più contatti utilizzando una casella di controllo</string>
     <string name="add_recipients">Aggiungere i destinatari</string>
