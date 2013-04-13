@@ -1,25 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-/*
- * Copyright (C) 2007-2008 Esmertec AG.
- * Copyright (C) 2007-2008 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- -->
+<?xml version="1.0" encoding="utf-8"?>
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label">Beskeder</string>
     <string name="new_message">Ny besked</string>
     <string name="menu_call_back">Ring til <xliff:g id="NAME">%s</xliff:g></string>
@@ -106,6 +87,7 @@
     <string name="cannot_send_message">Beskeden kan ikke sendes</string>
     <string name="cannot_send_message_reason">Din besked har ingen gyldige modtagere.</string>
     <string name="cannot_forward_drm_obj">DRM-objektet i beskeden kan ikke videresendes.</string>
+    <string name="cannot_find_contact">Den valgte kontaktperson kunne ikke tilknyttes.</string>
     <string name="converting_to_picture_message">Konverterer til mms ...</string>
     <string name="cannot_add_slide_anymore">Der kan ikke tilføjes flere dias.</string>
     <string name="cannot_add_picture_and_video">Video og billede kan ikke føjes til ét dias.</string>
@@ -170,6 +152,8 @@
     <string name="pref_summary_mms_auto_retrieval">Hent automatisk beskeder</string>
     <string name="pref_title_mms_retrieval_during_roaming">Aut. hent. under roaming</string>
     <string name="pref_summary_mms_retrieval_during_roaming">Hent automatisk beskeder under roaming</string>
+    <string name="pref_title_save_location">Mappe til vedhæftede filer</string>
+    <string name="pref_title_save_location_summary">Angiv mappe hvor vedhæftede filer gemmes</string>
     <string name="confirm_dialog_title">Vil du slette?</string>
     <string name="confirm_dialog_locked_title">Vil du slette låst besked?</string>
     <string name="confirm_delete_conversation">Hele tråden slettes.</string>
@@ -231,6 +215,7 @@
     <string name="attach_sound">Lyd</string>
     <string name="attach_record_sound">Optag lyd</string>
     <string name="attach_slideshow">Diasshow</string>
+    <string name="attach_contact_info">Kontaktoplysninger</string>
     <string name="select_bottom_text">Tekst i bunden</string>
     <string name="select_top_text">Tekst øverst</string>
     <string name="delivery_toast_body">Besked modtaget af %s.</string>
@@ -238,6 +223,7 @@
     <string name="notification_multiple_title">Nye beskeder</string>
     <string name="notification_failed_multiple"><xliff:g id="COUNT">%s</xliff:g> beskeder kunne ikke sendes</string>
     <string name="notification_failed_multiple_title">Beskeden er ikke sendt</string>
+    <string name="record_sound_error_alert">Kunne ikke optage lyd.    SoundRecorder.apk mangler!</string>
     <string name="sim_full_title">SIM-kortet er fuldt</string>
     <string name="sim_full_body">Slet nogle flere beskeder for at gøre plads til flere.</string>
     <string name="sms_full_title">Sms-hukommelsen er fuld</string>
@@ -303,17 +289,19 @@
     <string name="message_count_notification"><xliff:g id="NUMBER">%1$s</xliff:g> nye beskeder</string>
     <string name="error_state">Svingende tilstand</string>
     <string name="error_state_text">Tilstanden af tråde og modtagere er svingende. Opret en fejlrapport, og send den via http://go/droidanizer</string>
+    <string name="label_mms_push">MMS Push</string>
+    <string name="desc_mms_push">Skubber MMS fra udbakken til netværket</string>
     <string name="disable_notifications_dialog_message">Vil du stoppe dobbelte underretninger via sms fra standardappen Meddelelser?</string>
     <string name="view_more_conversations">Få vist flere samtaler</string>
     <string name="attachment_audio">Lyd</string>
     <string name="attachment_slideshow">Diasshow</string>
+    <string name="attachment_video">Video</string>
     <string name="attachment_picture">Billede</string>
     <string name="notification_separator">    </string>
     <string name="enumeration_comma">, </string>
     <string name="message_timestamp_format"><xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g></string>
     <string name="pref_extra_settings">Ekstra indstillinger</string>
-    <string name="pref_title_strip_unicode">Fjern Unicode</string>
-    <string name="pref_summary_strip_unicode">Erstat gængse tegn, som ikke understøttes i 160-tegns SMS-beskeder</string>
+    <string name="pref_char_settings">Char settings</string>
     <string name="pref_title_enable_emojis">Smiley-understøttelse</string>
     <string name="pref_summary_enable_emojis">Slå understøttelse af Unicode-smileys til, et sæt af 471 flotte smileys</string>
     <string name="menu_insert_emoji">Indsæt smileys</string>
@@ -349,12 +337,22 @@
     <string name="pref_summary_mms_notification_vibrate_call">Tillad vibration under opkald</string>
     <string name="pref_title_mms_notification_vibrate_custom">Brugerdefineret vibrationsmønster</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatér fra/til i millisekunder: fra, til, fra, til, ...</string>
+    <string name="pref_title_unicode_stripping">Strip unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Leave characters intact</string>
+    <string name="pref_unicode_stripping_non_encodable">Strip non-encodable characters</string>
+    <string name="pref_unicode_stripping_all">Strip all unicode characters</string>
+    <string name="pref_title_enable_quick_emojis">Hurtig emoji knap</string>
+    <string name="pref_summary_enable_quick_emojis">Få vist en knap ved siden af skrivefeltet for hurtig adgang til emoji</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">Use SoftBank emoji encoding</string>
     <string name="pref_title_mms_full_timestamp">Fulde tidsstempler</string>
     <string name="pref_summary_mms_full_timestamp">Vis både dato og tid i tidsstempler</string>
     <string name="pref_title_mms_use_sent_timestamp">Originale tidsstempler</string>
     <string name="pref_summary_mms_use_sent_timestamp">Vis sendt dato i stedet for modtaget dato i tidsstempler</string>
+    <string name="menu_add_to_calendar">Føj til kalender</string>
     <string name="pref_keyboard_emoji">Smiley</string>
     <string name="pref_keyboard_new_line">Ny linje med Enter</string>
+    <string name="pref_keyboard_unknown">Ukendt. Vælg igen</string>
     <string name="pref_title_input_type">Type af softwaretastatur</string>
     <string name="pref_summary_input_type">Vælg det softwaretastatur, som skal bruges til at skrive beskeder</string>
     <string name="pref_quickmessage">HurtigBesked</string>
@@ -372,10 +370,27 @@
     <string name="toast_sending_message">Sender besked...</string>
     <string name="qm_quick_reply">Hurtigt svar</string>
     <string name="qm_mark_read">Læs</string>
+    <string name="direct_call_title">Direkte Opkald</string>
+    <string name="direct_call_summary">Ring til personen når du holder telefonen op til øret</string>
+    <string name="pref_title_mms_message_font_size">Besked skriftstørrelse</string>
+    <string name="pref_summary_mms_message_font_size">Indstil skriftstørrelsen på meddelelsesvisning</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Vælg skriftstørrelse</string>
+    <string name="pref_title_notification_privacy_mode_enabled">Privat tilstand</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Skjul afsender og beskeden i statuslinjen og deaktivere Hurtigt svar</string>
     <string name="notification_single_title_privacy_mode">Ny besked</string>
     <string name="notification_single_text_privacy_mode">1 ulæst besked</string>
     <string name="notification_multiple_title_privacy_mode">Nye beskeder</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> unread messages</string>
+    <string name="notification_ticker_privacy_mode">Ny besked modtaget</string>
     <string name="msg_sig_title">Signatur</string>
+    <string name="msg_sig_summary">Indstil en brugerdefineret signatur til meddelelser</string>
+    <string name="msg_sig_enter_text">Indtast signaturtekst</string>
+    <string name="mms_breath">Pulserende SMS</string>
+    <string name="mms_breath_summary">Vil give dit statusbar ikon en pulserende effekt</string>
+    <string name="hide_avatar">Skjul avatar</string>
+    <string name="hide_avatar_summary">Skjul avataren på listen med alle beskeder</string>
+    <string name="pref_multi_select">Easy Selector</string>
+    <string name="pref_multi_select_summary">Vælg flere kontakter ved hjælp af flueben</string>
     <string name="add_recipients">Tilføj modtagere</string>
     <string name="add_recipients_positive_button">Tilføj</string>
     <string-array name="select_dialog_items">
