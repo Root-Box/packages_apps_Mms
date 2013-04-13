@@ -1,25 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-/*
- * Copyright (C) 2007-2008 Esmertec AG.
- * Copyright (C) 2007-2008 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- -->
+<?xml version="1.0" encoding="utf-8"?>
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label">SMS a MMS</string>
     <string name="new_message">Nová zpráva</string>
     <string name="menu_call_back">Volat kontakt <xliff:g id="NAME">%s</xliff:g></string>
@@ -321,8 +302,6 @@
     <string name="message_timestamp_format"><xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g></string>
     <string name="pref_extra_settings">Rozšířená nastavení</string>
     <string name="pref_char_settings">Nastavení znaků</string>
-    <string name="pref_title_strip_unicode">Odstranit znaky Unicode</string>
-    <string name="pref_summary_strip_unicode">Odstranit diakritiku, která snižuje výchozí počet znaků zprávy (160).</string>
     <string name="pref_title_enable_emojis">Podpora smajlíků</string>
     <string name="pref_summary_enable_emojis">Povolit podporu unicode smajlíků, sada obsahuje 471 pěkných smajlíků</string>
     <string name="menu_insert_emoji">Vkládat smajlíky</string>
@@ -358,8 +337,14 @@
     <string name="pref_summary_mms_notification_vibrate_call">Povolit vibrace během hovoru</string>
     <string name="pref_title_mms_notification_vibrate_custom">Vlastní vzor vibrace</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formát vyp/zap v milisekundách: vyp, zap, vyp, zap,\u2026</string>
+    <string name="pref_title_unicode_stripping">Odstranit znaky Unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Ponechat znaky beze změn</string>
+    <string name="pref_unicode_stripping_non_encodable">Odstranit nekódovatelné znaky</string>
+    <string name="pref_unicode_stripping_all">Odstranit všechny znaky Unicode</string>
     <string name="pref_title_enable_quick_emojis">Tlačítko rychlých smajlíků</string>
     <string name="pref_summary_enable_quick_emojis">Zobrazit tlačítko vedle oblasti pro zadávání textu pro rychlé smajlíky</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank smajlíci</string>
+    <string name="pref_summary_enable_softbank_encoding">Používat SoftBank smajlíky</string>
     <string name="pref_title_mms_full_timestamp">Kompletní časový údaj</string>
     <string name="pref_summary_mms_full_timestamp">Zobrazení času i datumu v informacích o zprávě</string>
     <string name="pref_title_mms_use_sent_timestamp">Původní časové údaje</string>
