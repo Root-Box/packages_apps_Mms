@@ -299,6 +299,9 @@ public class MessagingNotification {
         if (delivery != null) {
             delivery.deliver(context, isStatusMessage);
         }
+
+        notificationSet.clear();
+        threads.clear();
     }
 
     /**
@@ -1162,6 +1165,10 @@ public class MessagingNotification {
                         inboxStyle.addLine(info.formatInboxMessage(context));
                     }
                     notification = inboxStyle.build();
+
+                    uniqueThreads.clear();
+                    mostRecentNotifPerThread.clear();
+
                     if (DEBUG) {
                         Log.d(TAG, "updateNotification: multi messages," +
                                 " showing inboxStyle notification");
