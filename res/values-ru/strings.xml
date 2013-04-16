@@ -396,9 +396,13 @@
     <string name="template_not_present_error">Вы не определили шаблон</string>
     <string name="template_not_present_error_title">Ошибка</string>
     <string name="template_select">Выберите шаблон</string>
-    <string name="template_cancel_confirm_title">Внимание</string>
-    <string name="template_cancel_confirm_text">Желаете отменить?</string>
-    <string name="gestures_already_present">Внимание: подобный жест связан с другим шаблоном!</string>
+    <string name="template_confirm_dialog_title">Удалить?</string>
+    <plurals name="template_confirm_delete_conversation">
+    <item quantity="one">Один шаблон будет удален.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> шаблон(а/ов) будет(ут) удален(ы).</item>
+    </plurals>
+    <string name="gestures_already_present">Такой жест уже назначен на другой шаблон</string>
+    <string name="select_template">Выбрать шаблоны</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
     <string name="pref_title_mms_notification_vibrate_settings">Настройки вибрации</string>
@@ -408,20 +412,20 @@
     <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
-	
-	<!-- Strip unicode -->
-	<string name="pref_title_unicode_stripping">Раскрывать юникод</string>
-	<string name="pref_unicode_stripping_leave_intact">Оставить символы как есть</string>
-	<string name="pref_unicode_stripping_non_encodable">Заменить некодируемые символы</string>
-	<string name="pref_unicode_stripping_all">Заменить все неподдерживаемые символы обычными</string>
-	
+    
+    <!-- Strip unicode -->
+    <string name="pref_title_unicode_stripping">Раскрывать юникод</string>
+    <string name="pref_unicode_stripping_leave_intact">Оставить символы как есть</string>
+    <string name="pref_unicode_stripping_non_encodable">Заменить некодируемые символы</string>
+    <string name="pref_unicode_stripping_all">Заменить все неподдерживаемые символы обычными</string>
+    
     <!-- Enable quick emojis -->
     <string name="pref_title_enable_quick_emojis">Быстрая вставка emoji</string>
     <string name="pref_summary_enable_quick_emojis">Показать кнопку рядом с полем ввода текста для быстрого доступа к emoji</string>
-	
-	<!-- Enable SoftBank emoji encoding -->
-	<string name="pref_title_enable_softbank_encoding">Стандарт emoji on SoftBank</string>
-	<string name="pref_summary_enable_softbank_encoding">Использовать стандарт оператора SoftBank для кодирования emoji</string>
+    
+    <!-- Enable SoftBank emoji encoding -->
+    <string name="pref_title_enable_softbank_encoding">Стандарт emoji on SoftBank</string>
+    <string name="pref_summary_enable_softbank_encoding">Использовать стандарт оператора SoftBank для кодирования emoji</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
@@ -461,8 +465,8 @@
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Ответить</string>
     <string name="qm_mark_read">Прочтено</string>
-	
-	<!-- Direct call -->
+    
+    <!-- Direct call -->
     <string name="direct_call_title">Быстрый вызов</string>
     <string name="direct_call_summary">Сразу набирать номер абонента при нажатии на номер, не используя кнопку вызова</string>
 
