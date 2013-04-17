@@ -970,4 +970,8 @@
     <string name="add_recipients">Add recipients</string>
     <string name="add_recipients_positive_button">Add</string>
 
+    <!-- Text area -->
+    <string name="pref_text_area_size_title">Text area size</string>
+    <string name="pref_text_area_size_summary">Set text area to <xliff:g id="lines">%1$s</xliff:g> lines</string>
+
 </resources>
