@@ -142,12 +142,9 @@
     <string name="pref_title_sms_delete">Szöveges üzenetek korlátja</string>
     <string name="pref_title_mms_delete">Multimédiás üzenetek korlátja</string>
     <string name="pref_title_notification_enabled">Értesítések</string>
-    <string name="pref_summary_notification_enabled">Üzenetekkel kapcsolatos értesítések megjelenítése az állapotsoron</string>
     <string name="pref_title_notification_vibrateWhen">Rezgés</string>
-    <string name="pref_summary_notification_vibrateWhen">Rezgés értesítések esetén is</string>
     <string name="pref_title_notification_ringtone">Válasszon csengőhangot</string>
     <string name="pref_messages_to_save">A menteni kívánt üzenetek számának beállítása</string>
-    <string name="prefDialogTitle_vibrateWhen">Rezgés</string>
     <string name="pref_title_mms_auto_retrieval">Automatikus letöltés</string>
     <string name="pref_summary_mms_auto_retrieval">Üzenetek automatikus letöltése</string>
     <string name="pref_title_mms_retrieval_during_roaming">Automatikus letöltés barangolás során</string>

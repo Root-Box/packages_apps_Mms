@@ -159,12 +159,9 @@
     <string name="pref_title_sms_delete">Limita mesajului text</string>
     <string name="pref_title_mms_delete">Limita pentru mesajele multimedia</string>
     <string name="pref_title_notification_enabled">Notificări</string>
-    <string name="pref_summary_notification_enabled">Afişaţi notificări de mesaje în bara de stare</string>
     <string name="pref_title_notification_vibrateWhen">Vibrare</string>
-    <string name="pref_summary_notification_vibrateWhen">Vibrare şi la notificări</string>
     <string name="pref_title_notification_ringtone">Alegeţi un ton de sonerie</string>
     <string name="pref_messages_to_save">Setaţi numărul de mesaje pentru salvare</string>
-    <string name="prefDialogTitle_vibrateWhen">Vibrare</string>
     <string name="pref_title_mms_auto_retrieval">Preluare automată</string>
     <string name="pref_summary_mms_auto_retrieval">Primiţi automat mesajele</string>
     <string name="pref_title_mms_retrieval_during_roaming">Preluare automată a mesajelor când este activat serviciul de roaming</string>

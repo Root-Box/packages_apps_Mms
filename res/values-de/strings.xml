@@ -142,12 +142,9 @@
     <string name="pref_title_sms_delete">Höchstzahl an SMS</string>
     <string name="pref_title_mms_delete">Höchstzahl an MMS</string>
     <string name="pref_title_notification_enabled">Benachrichtigungen</string>
-    <string name="pref_summary_notification_enabled">Bei Nachrichteneingang Benachrichtigung in Statuszeile anzeigen</string>
     <string name="pref_title_notification_vibrateWhen">Vibration</string>
-    <string name="pref_summary_notification_vibrateWhen">Bei Benachrichtigung vibrieren</string>
     <string name="pref_title_notification_ringtone">Klingelton auswählen</string>
     <string name="pref_messages_to_save">Anzahl der zu speichernden Nachrichten festlegen</string>
-    <string name="prefDialogTitle_vibrateWhen">Vibration</string>
     <string name="pref_title_mms_auto_retrieval">Automatisch abrufen</string>
     <string name="pref_summary_mms_auto_retrieval">Nachrichten automatisch empfangen</string>
     <string name="pref_title_mms_retrieval_during_roaming">Autom. Roaming-Abruf</string>

@@ -142,12 +142,9 @@
     <string name="pref_title_sms_delete">Giới hạn tin nhắn văn bản</string>
     <string name="pref_title_mms_delete">Giới hạn tin nhắn đa phương tiện</string>
     <string name="pref_title_notification_enabled">Thông báo</string>
-    <string name="pref_summary_notification_enabled">Hiển thị thông báo tin nhắn trên thanh trạng thái</string>
     <string name="pref_title_notification_vibrateWhen">Rung</string>
-    <string name="pref_summary_notification_vibrateWhen">Cũng rung khi được thông báo</string>
     <string name="pref_title_notification_ringtone">Chọn nhạc chuông</string>
     <string name="pref_messages_to_save">Đặt số tin nhắn sẽ lưu</string>
-    <string name="prefDialogTitle_vibrateWhen">Rung</string>
     <string name="pref_title_mms_auto_retrieval">Tự động truy xuất</string>
     <string name="pref_summary_mms_auto_retrieval">Tự động truy xuất tin nhắn</string>
     <string name="pref_title_mms_retrieval_during_roaming">Tự động truy xuất khi chuyển vùng</string>

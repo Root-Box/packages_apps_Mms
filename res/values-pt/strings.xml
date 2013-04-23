@@ -142,12 +142,9 @@
     <string name="pref_title_sms_delete">Text message limit</string>
     <string name="pref_title_mms_delete">Multimedia message limit</string>
     <string name="pref_title_notification_enabled">Notifications</string>
-    <string name="pref_summary_notification_enabled">Display message notifications in status bar</string>
     <string name="pref_title_notification_vibrateWhen">Vibrate</string>
-    <string name="pref_summary_notification_vibrateWhen">Also vibrate when notified</string>
     <string name="pref_title_notification_ringtone">Choose ringtone</string>
     <string name="pref_messages_to_save">Set number of messages to save</string>
-    <string name="prefDialogTitle_vibrateWhen">Vibrate</string>
     <string name="pref_title_mms_auto_retrieval">Auto-retrieve</string>
     <string name="pref_summary_mms_auto_retrieval">Automatically retrieve messages</string>
     <string name="pref_title_mms_retrieval_during_roaming">Roaming auto-retrieve</string>

@@ -142,12 +142,9 @@
     <string name="pref_title_sms_delete">Ograničenja za tekstualne poruke</string>
     <string name="pref_title_mms_delete">Ograničenje za multimedijske poruke</string>
     <string name="pref_title_notification_enabled">Obavijesti</string>
-    <string name="pref_summary_notification_enabled">Prikaz obavijesti o porukama u traci statusa</string>
     <string name="pref_title_notification_vibrateWhen">Vibracija</string>
-    <string name="pref_summary_notification_vibrateWhen">Po obavijesti također vibriraj</string>
     <string name="pref_title_notification_ringtone">Odaberi melodiju zvona</string>
     <string name="pref_messages_to_save">Postavi broj poruka za spremanje</string>
-    <string name="prefDialogTitle_vibrateWhen">Vibracija</string>
     <string name="pref_title_mms_auto_retrieval">Automatski dohvat</string>
     <string name="pref_summary_mms_auto_retrieval">Automatski dohvaćaj poruke</string>
     <string name="pref_title_mms_retrieval_during_roaming">Automatski dohvat u roamingu</string>

@@ -161,12 +161,9 @@
     <string name="pref_title_sms_delete">Limit wiadomości tekstowych</string>
     <string name="pref_title_mms_delete">Limit wiadomości MMS</string>
     <string name="pref_title_notification_enabled">Powiadomienia</string>
-    <string name="pref_summary_notification_enabled">Wyświetlaj powiadomienie o wiadomości na pasku stanu</string>
     <string name="pref_title_notification_vibrateWhen">Wibracje</string>
-    <string name="pref_summary_notification_vibrateWhen">Wibracje również przy powiadomieniu</string>
     <string name="pref_title_notification_ringtone">Wybierz dzwonek</string>
     <string name="pref_messages_to_save">Ustaw liczbę zapisywanych wiadomości</string>
-    <string name="prefDialogTitle_vibrateWhen">Wibracje</string>
     <string name="pref_title_mms_auto_retrieval">Autoodbieranie</string>
     <string name="pref_summary_mms_auto_retrieval">Odbierz wiadomości automatycznie</string>
     <string name="pref_title_mms_retrieval_during_roaming">W roamingu</string>

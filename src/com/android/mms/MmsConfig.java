@@ -217,8 +217,8 @@ public class MmsConfig {
         return mEnableSplitSMS;
     }
 
-    public static boolean getSprintVVMEnabled() {
-        return mEnableSprintVVM;
+    public static boolean isSuppressedSprintVVM(String address) {
+        return mEnableSprintVVM && address.contentEquals("9016");
     }
 
     public static boolean getSlideDurationEnabled() {
