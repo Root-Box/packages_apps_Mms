@@ -403,8 +403,8 @@ public class MessageUtils {
         }
     }
 
-    public static int getAttachmentType(SlideshowModel model) {
-        if (model == null) {
+    public static int getAttachmentType(SlideshowModel model, MultimediaMessagePdu mmp) {
+        if (model == null || mmp == null) {
             return MessageItem.ATTACHMENT_TYPE_NOT_LOADED;
         }
 
@@ -431,6 +431,12 @@ public class MessageUtils {
             }
 
             if (slide.hasText()) {
+                return WorkingMessage.TEXT;
+            }
+
+            // Handle the multimedia message only has subject
+            String subject = mmp.getSubject() != null ? mmp.getSubject().getString() : null;
+            if (!TextUtils.isEmpty(subject)) {
                 return WorkingMessage.TEXT;
             }
         }
