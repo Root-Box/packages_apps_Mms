@@ -4061,8 +4061,6 @@ public class ComposeMessageActivity extends Activity
         mTextEditor.addTextChangedListener(mTextEditorWatcher);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         mTextEditor.setMaxLines(prefs.getInt(MessagingPreferenceActivity.TEXT_AREA_SIZE, 3));
-        mTextEditor.setFilters(new InputFilter[] {
-                new LengthFilter(MmsConfig.getMaxTextLimit())});
         mTextCounter = (TextView) findViewById(R.id.text_counter);
         mSendButtonMms = (TextView) findViewById(R.id.send_button_mms);
         mSendButtonSms = (ImageButton) findViewById(R.id.send_button_sms);
