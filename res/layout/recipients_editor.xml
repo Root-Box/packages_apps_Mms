@@ -51,13 +51,15 @@
 
         <ImageButton
             android:id="@+id/recipients_selector"
-            style="?android:attr/borderlessButtonStyle"
             android:nextFocusLeft="@+id/recipients_editor"
-            android:layout_width="0dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.0"
-            android:layout_marginLeft="4dip"
-            android:src="@drawable/ic_recipients_add"
-        />
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="12dip"
+            android:paddingBottom="12dip"
+            android:src="@drawable/ic_recipients_add" />
+
     </LinearLayout>
 </LinearLayout>
