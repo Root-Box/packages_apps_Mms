@@ -37,7 +37,6 @@ import android.os.Parcelable;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract.Profile;
-import android.provider.Settings;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.InputFilter;
@@ -194,8 +193,8 @@ public class QuickMessagePopup extends Activity implements
         mInputMethod = Integer.parseInt(prefs.getString(MessagingPreferenceActivity.INPUT_TYPE,
                 Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE)));
 
-        mDarkTheme = Settings.Secure.getInt(mContext.getContentResolver(),
-                            Settings.Secure.UI_INVERTED_MODE, 0) == 1;
+        mDarkTheme = mContext.getResources().getConfiguration().uiInvertedMode
+                         == Configuration.UI_INVERTED_MODE_YES;
 
         // Set the window features and layout
         requestWindowFeature(Window.FEATURE_NO_TITLE);
