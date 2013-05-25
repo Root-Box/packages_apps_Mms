@@ -505,7 +505,9 @@
     <string name="pref_multi_select">Мульти-выбор</string>
     <string name="pref_multi_select_summary">Выбрать несколько контактов \"галочкой\"</string>
     <string name="add_recipients">Добавить получателей</string>
-    <string name="add_recipients_positive_button">Добавить</string>
+    <string name="groups_header">Группы</string>
+    <string name="loading_recipients">Загрузка контактов и групп</string>
+    <string name="no_recipients">Нет получателей</string>
 
     <!-- Text area -->
     <string name="pref_text_area_size_title">Размер текстовой области</string>
