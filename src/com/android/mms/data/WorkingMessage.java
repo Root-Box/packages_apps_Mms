@@ -486,12 +486,12 @@ public class WorkingMessage {
              */
             int smsSegmentCount = params[0];
 
-            if (!MmsConfig.getMultipartSmsEnabled()) {
+            if (!MessagingPreferenceActivity.getMultiPartSmsEnabled(mActivity)) {
                 // The provider doesn't support multi-part sms's so as soon as the user types
                 // an sms longer than one segment, we have to turn the message into an mms.
                 setLengthRequiresMms(smsSegmentCount > 1, false);
             } else {
-                int threshold = MmsConfig.getSmsToMmsTextThreshold();
+                int threshold = MessagingPreferenceActivity.getMultiPartSmsSize(mActivity);
                 setLengthRequiresMms(threshold > 0 && smsSegmentCount > threshold, false);
             }
         } else {

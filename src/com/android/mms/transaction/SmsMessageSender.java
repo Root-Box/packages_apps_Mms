@@ -92,7 +92,7 @@ public class SmsMessageSender implements MessageSender {
                 MessagingPreferenceActivity.SMS_DELIVERY_REPORT_MODE,
                 DEFAULT_DELIVERY_REPORT_MODE);
 
-        boolean splitMessage = MmsConfig.getSplitSmsEnabled();
+        boolean splitMessage = MessagingPreferenceActivity.getSplitSmsEnabled(mContext);
 
         boolean splitCounter = prefs.getBoolean(
                 MessagingPreferenceActivity.SMS_SPLIT_COUNTER,

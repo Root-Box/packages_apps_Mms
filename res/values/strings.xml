@@ -986,4 +986,13 @@
     <string name="pref_summary_mms_user_agent">Spoof phone as a different model for MMS</string>
     <string name="pref_mms_user_agent_custom_set">ser Agent set to:\n</string>
 
+    <!-- Multi-Part SMS -->
+    <string name="pref_title_sms_multi_part">Multi-part SMS</string>
+    <string name="pref_summary_sms_multi_part">Text messages over 160 chars will be sent as multi-part SMS</string>
+    <string name="pref_summary_sms_multi_part_mms">Text message will be converted to MMS after <xliff:g id="seg">%1$s</xliff:g> segments</string>
+
+    <!-- Split SMS -->
+    <string name="pref_title_sms_split">Split SMS</string>
+    <string name="pref_summary_sms_split">Text messages will be split to 160 char messages</string>
+
 </resources>
