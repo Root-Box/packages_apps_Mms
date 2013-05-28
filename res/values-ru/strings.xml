@@ -526,4 +526,13 @@
     <string name="pref_summary_mms_user_agent">Объявлять телефон как другую модель для работы MMS</string>
     <string name="pref_mms_user_agent_custom_set">User Agent установлен на:\n</string>
 
+    <!-- Multi-Part SMS -->
+    <string name="pref_title_sms_multi_part">Многочастное SMS</string>
+    <string name="pref_summary_sms_multi_part">Сообщения длиннее 160 символов будут отправляться как многочастное SMS</string>
+    <string name="pref_summary_sms_multi_part_mms">Сообщения будут преобразованы в MMS после <xliff:g id="seg">%1$s</xliff:g> сегментов</string>
+
+    <!-- Split SMS -->
+    <string name="pref_title_sms_split">Разбить SMS</string>
+    <string name="pref_summary_sms_split">Сообщения будут разбиты на части по 160 символов</string>
+
 </resources>
