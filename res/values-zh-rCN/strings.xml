@@ -442,4 +442,7 @@
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">添加日历提醒</string>
+
+    <string name="storage_warning_title">"你的手机内存已满"</string>
+    <string name="storage_warning_content">"你将不会接受新的短/彩信"</string>
 </resources>
