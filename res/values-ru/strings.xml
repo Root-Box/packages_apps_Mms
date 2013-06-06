@@ -179,7 +179,7 @@
     <string name="pref_title_notification_enabled" msgid="9118792213953729414">"Уведомления"</string>
     <string name="pref_title_notification_vibrateWhen" msgid="4251208067092761057">"Вибросигнал"</string>
     <string name="pref_title_notification_ringtone" msgid="5467265237106229952">"Выбрать рингтон"</string>
-    <string name="pref_messages_to_save" msgid="3202539743892934926">"Установить макс. кол-во сообщений в цепочке для хранения"</string>
+    <string name="pref_messages_to_save" msgid="3202539743892934926">"Установить макс. кол-во сообщений в цепочке"</string>
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"Всегда"</item>
     <item msgid="6069709696037750627">"Только в режиме без звука"</item>
@@ -528,8 +528,10 @@
 
     <!-- Multi-Part SMS -->
     <string name="pref_title_sms_multi_part">Многочастное SMS</string>
+    <string name="pref_title_sms_multi_part_size">Размер многочастного собщения</string>
+    <string name="pref_summary_sms_multi_part_mms">Текстовые сообщения длиннее 160 символов будут преобразованы в MMS</string>
     <string name="pref_summary_sms_multi_part">Сообщения длиннее 160 символов будут отправляться как многочастное SMS</string>
-    <string name="pref_summary_sms_multi_part_mms">Сообщения будут преобразованы в MMS после <xliff:g id="seg">%1$s</xliff:g> сегментов</string>
+    <string name="pref_summary_sms_multi_part_mms_size">Сообщения будут преобразованы в MMS после <xliff:g id="seg">%1$s</xliff:g> сегментов</string>
 
     <!-- Split SMS -->
     <string name="pref_title_sms_split">Разбить SMS</string>
