@@ -360,7 +360,7 @@
     <!-- Settings item for entering ringtone selection screen -->
     <string name="pref_title_notification_ringtone">Choose ringtone</string>
     <!-- Settings item for setting the number of message to save for each conversation -->
-    <string name="pref_messages_to_save">Set number of messages to save</string>
+    <string name="pref_messages_to_save">Set number of messages</string>
     <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
     <string name="silent_ringtone">Silent</string>
 
@@ -988,8 +988,10 @@
 
     <!-- Multi-Part SMS -->
     <string name="pref_title_sms_multi_part">Multi-part SMS</string>
-    <string name="pref_summary_sms_multi_part">Text messages over 160 chars will be sent as multi-part SMS</string>
-    <string name="pref_summary_sms_multi_part_mms">Text message will be converted to MMS after <xliff:g id="seg">%1$s</xliff:g> segments</string>
+    <string name="pref_title_sms_multi_part_size">Multi-part SMS size</string>
+    <string name="pref_summary_sms_multi_part_mms">Text messages over 160 chars will be sent as MMS</string>
+    <string name="pref_summary_sms_multi_part">Text messages over 160 chars will be sent as Multi-part SMS</string>
+    <string name="pref_summary_sms_multi_part_mms_size">Text message will be converted to MMS after <xliff:g id="seg">%1$s</xliff:g> segments</string>
 
     <!-- Split SMS -->
     <string name="pref_title_sms_split">Split SMS</string>
