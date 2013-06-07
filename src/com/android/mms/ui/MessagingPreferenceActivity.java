@@ -91,7 +91,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
     // Split sms
     public static final String SMS_SPLIT_COUNTER        = "pref_key_sms_split_counter";
-    public static final String PREF_SMS_MULTI_PART      = "pref_key_sms_multi_part";
+    public static final String PREF_SMS_MULTI_PART_ENABLED = "pref_key_sms_multi_part_enabled";
     public static final String PREF_SMS_MULTI_PART_SIZE = "pref_key_sms_multi_part_size";
     public static final int SMS_MULTI_PART_MIN          = 0;
     public static final int SMS_MULTI_PART_MAX          = 100;
@@ -211,7 +211,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mSmsSplitCounterPref = (CheckBoxPreference) findPreference("pref_key_sms_split_counter");
         mSmsSplitPref = (CheckBoxPreference) findPreference(PREF_SMS_SPLIT);
         mSmsSplitPref.setChecked(mSmsSplitPref.isChecked() || MmsConfig.getSplitSmsEnabled());
-        mSmsMultiPartPref = (CheckBoxPreference) findPreference(PREF_SMS_MULTI_PART);
+        mSmsMultiPartPref = (CheckBoxPreference) findPreference(PREF_SMS_MULTI_PART_ENABLED);
         mSmsMultiPartPref.setChecked(mSmsMultiPartPref.isChecked());
         mSmsMultiPartSizePref = findPreference(PREF_SMS_MULTI_PART_SIZE);
         setMultiPartSmsSummary();
@@ -761,7 +761,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
     public static boolean getMultiPartSmsEnabled(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        return prefs.getBoolean(PREF_SMS_MULTI_PART, MmsConfig.getMultipartSmsEnabled());
+        return prefs.getBoolean(PREF_SMS_MULTI_PART_ENABLED, MmsConfig.getMultipartSmsEnabled());
     }
 
     private void setMultiPartSmsSummary() {

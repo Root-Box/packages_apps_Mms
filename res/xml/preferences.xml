@@ -82,7 +82,7 @@
 
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key="pref_key_sms_multi_part"
+            android:key="pref_key_sms_multi_part_enabled"
             android:summary="@string/pref_summary_sms_multi_part"
             android:title="@string/pref_title_sms_multi_part" />
 
