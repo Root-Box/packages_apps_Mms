@@ -428,4 +428,6 @@
         <item quantity="one"><xliff:g id="NUMBER">%1$s</xliff:g> personas</item>
         <item quantity="other"><xliff:g id="NUMBER">%1$s</xliff:g> personas</item>
     </plurals>
+    <string name="pref_text_area_size_title">Tamaño área de texto</string>
+    <string name="pref_text_area_size_summary">Establece área de texto a <xliff:g id="lines">%1$s</xliff:g> lineas.</string>
 </resources>
