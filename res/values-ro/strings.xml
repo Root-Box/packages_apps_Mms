@@ -341,8 +341,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Setări vibrare</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Model vibrare</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Schimbaţi modelul de vibrare</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrare în Apel</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Permiteţi vibrarea în timpul unui apel</string>
     <string name="pref_title_mms_notification_vibrate_custom">Model vibrare personalizat</string>
     <string name="pref_title_mms_full_timestamp">Marcaje de timp integrale</string>
     <string name="pref_summary_mms_full_timestamp">Afişaţi atât data cât şi ora în marcajul de timp</string>

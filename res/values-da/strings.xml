@@ -330,8 +330,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Vibrationsindstillinger</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrationsmønster</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Skift vibrationsmønster</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrér ved opkald</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Tillad vibration under opkald</string>
     <string name="pref_title_mms_notification_vibrate_custom">Brugerdefineret vibrationsmønster</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatér fra/til i millisekunder: fra, til, fra, til, ...</string>
     <string name="pref_title_unicode_stripping">Strip unicode</string>

@@ -333,8 +333,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Configuración de vibración</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Patrón de vibración</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">cambiar patrón de vebración</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrar en llamada</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Permitir la vibración durante una llamada</string>
     <string name="pref_title_mms_notification_vibrate_custom">Patrón de vebración personalizado</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formato Desactivado/Activado en milisegundos: Desactivado, Activado, Desactivado, Activado, ...</string>
     <string name="pref_title_unicode_stripping">Borrar Unicode</string>

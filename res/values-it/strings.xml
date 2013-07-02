@@ -330,8 +330,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Impostazioni vibrazione</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Schema vibrazione</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Cambia schema di vibrazione</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrazione in chiamate</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante una chiamata</string>
     <string name="pref_title_mms_notification_vibrate_custom">Schema personalizzato</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatta off/on in millisecondi: off, on, off, on, ...</string>
     <string name="pref_title_unicode_stripping">Rimuovi unicode</string>

@@ -333,8 +333,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">إعدادات الاهتزاز</string>
     <string name="pref_title_mms_notification_vibrate_pattern">نمط الاهتزاز</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">تغيير نمط الاهتزاز</string>
-    <string name="pref_title_mms_notification_vibrate_call">الاهتزاز عند المكالمة</string>
-    <string name="pref_summary_mms_notification_vibrate_call">السماح بالاهتزاز بينما في مكالمة</string>
     <string name="pref_title_mms_notification_vibrate_custom">نمط اهتزاز مخصص</string>
     <string name="pref_text_mms_notification_vibrate_custom">تنسيق ايقاف/تشغيل بالمللي ثانية: إيقاف، تشغيل، إيقاف،،...</string>
     <string name="pref_title_unicode_stripping">قطاع الترميز الموحد</string>

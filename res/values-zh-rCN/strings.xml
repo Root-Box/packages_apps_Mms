@@ -387,8 +387,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">震动设置</string>
     <string name="pref_title_mms_notification_vibrate_pattern">震动形式</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">更改震动形式</string>
-    <string name="pref_title_mms_notification_vibrate_call">通话时震动</string>
-    <string name="pref_summary_mms_notification_vibrate_call">允许通话时震动</string>
     <string name="pref_title_mms_notification_vibrate_custom">自定义震动形式</string>
     <string name="pref_text_mms_notification_vibrate_custom">格式 关/开 每毫秒: 关, 开, 关, 开, ...</string>
 

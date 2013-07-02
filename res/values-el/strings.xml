@@ -381,8 +381,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Ρυθμίσεις δόνησης</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Μοτίβο δόνησης</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Αλλαγή μοτίβου δόνησης</string>
-    <string name="pref_title_mms_notification_vibrate_call">Δόνηση κατά την κλήση</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Να επιτρέπεται η δόνηση κατά τη διάρκεια μιας κλήσης</string>
     <string name="pref_title_mms_notification_vibrate_custom">Προσαρμοσμένο μοτίβο δόνησης</string>
     <string name="pref_text_mms_notification_vibrate_custom">Μορφή: off/on σε millisecond: off, on, off, on, ...</string>
 

@@ -974,9 +974,6 @@ public class MessagingNotification {
                                                              // from a favorite.
 
         int defaults = 0;
-        final TelephonyManager tm =
-                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        boolean callIsActive = tm.getCallState() != TelephonyManager.CALL_STATE_IDLE;
 
         if (isNew) {
             boolean vibrate = false;
@@ -994,11 +991,6 @@ public class MessagingNotification {
                 String vibrateWhen =
                         sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN, null);
                 vibrate = "always".equals(vibrateWhen);
-            }
-
-            if (vibrate && callIsActive) {
-                // only vibrate during calls if allowed by the user
-                vibrate = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_CALL, true);
             }
 
             if (vibrate) {
@@ -1024,8 +1016,8 @@ public class MessagingNotification {
             }
         }
 
+        // Set light defaults
         defaults |= Notification.DEFAULT_LIGHTS;
-
         noti.setDefaults(defaults);
 
         // set up delete intent
@@ -1188,6 +1180,9 @@ public class MessagingNotification {
             // Trigger the QuickMessage pop-up activity if enabled
             // But don't show the QuickMessage if the user is in a call or the phone is ringing
             if (qmPopupEnabled && qmIntent != null) {
+                final TelephonyManager tm =
+                        (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+                boolean callIsActive = tm.getCallState() != TelephonyManager.CALL_STATE_IDLE;
                 if (!callIsActive && !ConversationList.mIsRunning && !ComposeMessageActivity.mIsRunning) {
                     // Show the popup
                     context.startActivity(qmIntent);
@@ -1201,7 +1196,6 @@ public class MessagingNotification {
 
         // Post the notification
         nm.notify(NOTIFICATION_ID, notification);
-
     }
 
     protected static CharSequence buildTickerMessage(

@@ -330,8 +330,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Vibrationseinstellungen</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrationsmuster</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Vibrationsmuster ändern</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrieren bei Anruf</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Vibrieren während eines Anrufs erlauben</string>
     <string name="pref_title_mms_notification_vibrate_custom">Anderes Vibrationsmuster</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format aus/an in Millisekunden: aus, an, aus, an, \u2026</string>
     <string name="pref_title_unicode_stripping">Unicode entfernen</string>

@@ -330,8 +330,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Rezgés beállítások</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Rezgés típusa</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Rezgés mintájának beállítása</string>
-    <string name="pref_title_mms_notification_vibrate_call">Rezgés hívás közben</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Rezgés engedélyezése hívás közben</string>
     <string name="pref_title_mms_notification_vibrate_custom">Egyedi rezgés minta</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formátum: ki/be milliszekundumban: ki, be, ki, be, ...</string>
     <string name="pref_title_unicode_stripping">Unicode eltávolítása</string>

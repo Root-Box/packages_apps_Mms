@@ -330,8 +330,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Vibracijos nustatymai</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibracijos šablonas</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Keisti vibracijos šabloną</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibruoti skambinant</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Leisti vibruoti skambučio metu</string>
     <string name="pref_title_mms_notification_vibrate_custom">Pasirenkamas vibracijos šablonas</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatuoti išjungta/įjungta milisekundėmis: išjungta, įjungta, išjungta, įjungta...</string>
     <string name="pref_title_unicode_stripping">Strip unicode</string>

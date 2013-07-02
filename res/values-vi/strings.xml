@@ -330,8 +330,6 @@
     <string name="pref_title_mms_notification_vibrate_settings">Cài đặt Rung</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Mẫu rung</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Thay đổi mẫu Rung</string>
-    <string name="pref_title_mms_notification_vibrate_call">Rung trong cuộc gọi</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Cho phép rung khi đang đàm thoại</string>
     <string name="pref_title_mms_notification_vibrate_custom">Mẫu rung riêng</string>
     <string name="pref_text_mms_notification_vibrate_custom">Bật/Tắt định dạng mili-giây: Tắt, bật, tắt, bật,...</string>
     <string name="pref_title_unicode_stripping">Dải Unicode</string>
