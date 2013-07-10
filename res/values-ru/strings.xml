@@ -450,6 +450,8 @@
     <string name="button_view">Посмотреть</string>
     <string name="button_templates">Шаблоны</string>
 
+    <string name="storage_warning_title">"Хранилище SMS заполнено"</string>
+    <string name="storage_warning_content">"Вы не сможете получать новые SMS/MMS сообщения"</string>
 
     <!-- Hint text in message body field when keyboard is exposed -->
     <string name="type_to_reply_text_enter_to_send">Начните писать чтобы ответить</string>
