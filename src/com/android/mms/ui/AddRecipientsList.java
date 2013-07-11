@@ -257,7 +257,7 @@ public class AddRecipientsList extends ListActivity {
         Map<Long,ArrayList<Long>> groupIdWithContactsId = new HashMap<Long, ArrayList<Long>>();
 
         // Store GID with all its CIDs
-        int GMCount = mGroupMemberships.size();
+        int GMCount = mGroupMemberships != null ? mGroupMemberships.size() : 0;
 
         for (int i = 0; i < GMCount; i++) {
             GMembership groupMembership = mGroupMemberships.get(i);
