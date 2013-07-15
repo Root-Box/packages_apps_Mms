@@ -37,8 +37,8 @@
     <color name="delivery_report_status">#ffcccccc</color>
     <color name="delivery_report_date">#ffcccccc</color>
     <color name="button_text">#ffffffff</color>
-    <color name="message_received">#ffffffff</color>
-    <color name="message_sent">#ff33b5e5</color>
+    <color name="message_received">#ff33b5e5</color>
+    <color name="message_sent">#ffffffff</color>
     <color name="widget_unread_text">#ffdddddd</color>
     <color name="widget_loading">#ffffffff</color>
     <color name="background">#ff000000</color>
